@@ -1,0 +1,200 @@
+[
+  {
+    "id": "header.local-toggle",
+    "description": "Locale toggle button en <-> fr",
+    "defaultMessage": "en français svp",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "menu.who-i-am",
+    "description": "Menu link for About page",
+    "defaultMessage": "Qui je suis",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "menu.what-i-do",
+    "description": "Menu link for Work page",
+    "defaultMessage": "Ce que je fait",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "about.p1",
+    "description": "",
+    "defaultMessage": "about.p1",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "about.p2",
+    "description": "",
+    "defaultMessage": "en français svp",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "interests",
+    "description": "",
+    "defaultMessage": "en français svp",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "interests.p1",
+    "description": "interests",
+    "defaultMessage": "interests",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "interests.p2",
+    "description": "interests",
+    "defaultMessage": "interests",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "techskills",
+    "description": "techskills",
+    "defaultMessage": "techskills",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "software",
+    "description": "software",
+    "defaultMessage": "software",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "visuals",
+    "description": "visuals",
+    "defaultMessage": "visuals",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "transversal",
+    "description": "transversal",
+    "defaultMessage": "transversal",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "network",
+    "description": "network",
+    "defaultMessage": "network",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "printerMaintenance",
+    "description": "printerMaintenance",
+    "defaultMessage": "printerMaintenance",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "alreadySaidComment",
+    "description": "alreadySaidComment",
+    "defaultMessage": "alreadySaidComment",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "usingWebsiteComment",
+    "description": "usingWebsiteComment",
+    "defaultMessage": "usingWebsiteComment",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "networkComment",
+    "description": "networkComment",
+    "defaultMessage": "networkComment",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "printerMaintenanceComment",
+    "description": "printerMaintenanceComment",
+    "defaultMessage": "printerMaintenanceComment",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "visualSoftware",
+    "description": "visualSoftware",
+    "defaultMessage": "visualSoftware",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "uqatLink",
+    "description": "uqatLink",
+    "defaultMessage": "UQAT",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "prismeLink",
+    "description": "prismeLink",
+    "defaultMessage": "PRISME",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "openSourceLib",
+    "description": "openSourceLib",
+    "defaultMessage": "openSourceLib",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "photographyLink",
+    "description": "photographyLink",
+    "defaultMessage": "photographyLink",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "resumeTitle",
+    "description": "resumeTitle",
+    "defaultMessage": "resumeTitle",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "curriculumVitae",
+    "description": "curriculumVitae",
+    "defaultMessage": "curriculumVitae",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "work.td-library.title",
+    "description": "tdLibraryTitle",
+    "defaultMessage": "tdLibraryTitle",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "work.td-library.excerpt",
+    "description": "tdLibraryExcerpt",
+    "defaultMessage": "tdLibraryExcerpt",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "work.neo.title",
+    "description": "neoTitle",
+    "defaultMessage": "neoTitle",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "work.neo.excerpt",
+    "description": "neoExcerpt",
+    "defaultMessage": "neoExcerpt",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "work.prisme.title",
+    "description": "prismeTitle",
+    "defaultMessage": "prismeTitle",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "work.prisme.excerpt",
+    "description": "prismeExcerpt",
+    "defaultMessage": "prismeExcerpt",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "work.locator.title",
+    "description": "locatorTitle",
+    "defaultMessage": "locatorTitle",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "work.locator.excerpt",
+    "description": "locatorExcerpt",
+    "defaultMessage": "locatorExcerpt",
+    "filepath": "src/library/messages.js"
+  }
+]
