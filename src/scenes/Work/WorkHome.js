@@ -11,6 +11,10 @@ import tdImage1 from '../../assets/works/td-library/tap.tempo.thumb.png'
 import tdImage2 from '../../assets/works/td-library/set.op.color.png'
 import tdImage3 from '../../assets/works/td-library/holly.mess.png'
 
+import prisme1 from '../../assets/works/prisme/dialog.3.JPG'
+import prisme2 from '../../assets/works/prisme/embryo.1.jpg'
+import prisme3 from '../../assets/works/prisme/servo.2.JPG'
+
 class WorkHome extends Component {
   render() {
     return (
@@ -39,12 +43,17 @@ class WorkHome extends Component {
         <h2>{ this.props.intl.formatMessage(messages.prismeTitle) }</h2>
         <p>
           { this.props.intl.formatMessage(messages.prismeExcerpt) }
-          <a className="open-arrow" href="https://prisme.studio/" target="_blank">&#10233;</a>
+          <Link className="open-arrow" to="prisme">&#10233;</Link>
         </p>
-        <h2>{ this.props.intl.formatMessage(messages.locatorTitle) }</h2>
-        <p>
-          { this.props.intl.formatMessage(messages.locatorExcerpt) }
-        </p>
+        <div className="thumbs-row">
+          <img src={prisme1} className="bordered" />
+          <img src={prisme2} />
+          <img src={prisme3} />
+        </div>
+        {/*<h2>{ this.props.intl.formatMessage(messages.locatorTitle) }</h2>*/}
+        {/*<p>*/}
+        {/*  { this.props.intl.formatMessage(messages.locatorExcerpt) }*/}
+        {/*</p>*/}
       </main>
     )
   }

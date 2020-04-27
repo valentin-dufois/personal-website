@@ -14,12 +14,16 @@ import neoDynamicsNews from '../../assets/works/neo-traffic/neo.news.shd.png'
 import neoDynamicsNewsBckg from '../../assets/works/neo-traffic/neo.dynamics.news-backgrounds.png'
 import neoDynamicsWeatherURL from '../../assets/works/neo-traffic/neo.dynamics.weather-url.png'
 import {injectIntl} from 'react-intl'
+import {Link} from 'react-router-dom'
 
 class NeoTraffic extends Component {
   renderFR = () => {
     return (
       <main className="work neo-traffic">
-        <h1>Neo-Traffic</h1>
+        <h1>
+          Neo-Traffic
+          <Link className="back-arrow" to="/what-i-do/">&#10232;</Link>
+        </h1>
         <p>
           Neo-Traffic est un diffuseur de contenu publicitaire statique et dynamique présent sur l'ensemble du territoire Canadien. Son réseau d'écrans se déploie dans plus d'une centaine de centres commerciaux, dans des stations essence et dans des salles de sport. Un dispositif d'une telle envergure nécessite une infrastructure stable et des outils permettant de simplifier le travail des collaborateurs.
         </p>
@@ -140,7 +144,10 @@ class NeoTraffic extends Component {
   renderEN = () => {
     return (
       <main className="work neo-traffic">
-        <h1>Neo-Traffic</h1>
+        <h1>
+          Neo-Traffic
+          <Link className="back-arrow" to="/what-i-do/">&#10232;</Link>
+        </h1>
         <p>
           Neo-Traffic is an advertising network for both static and dynamic content covering Canada. Its network of screens is present in more than a hundred malls, gas stations and gyms. A network this big requires a stable and robust infrastructure as well as tools to facilitate the work of employees.
         </p>

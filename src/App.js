@@ -9,9 +9,11 @@ import About from './scenes/About.js'
 import Footer from './scenes/Footer.js'
 
 import {IntlProvider } from 'react-intl'
+import ScrollTop from './Components/ScrollTop'
 import frenchMessages from './assets/locales/fr'
 import englishMessages from './assets/locales/en'
 import Work from './scenes/Work'
+
 
 const locales = {
   'fr': frenchMessages,
@@ -46,6 +48,7 @@ class App extends Component {
   render () {
     return (
       <Router>
+        <ScrollTop />
         <IntlProvider
           messages={ locales[this.state.locale] }
           locale={ this.state.locale }>
