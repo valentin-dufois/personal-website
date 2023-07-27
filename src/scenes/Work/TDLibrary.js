@@ -5,6 +5,7 @@ import tapTempoIMG from '../../assets/works/td-library/tap.tempo.png'
 import jsonToTableIMG from '../../assets/works/td-library/json.to.table.png'
 import midiCHOPIMG from '../../assets/works/td-library/midi.chop.png'
 import {Link} from 'react-router-dom'
+import messages from '../../library/messages'
 
 class TdLibrary extends Component {
   renderFR = () => {
@@ -12,7 +13,9 @@ class TdLibrary extends Component {
       <main className="work neo-traffic">
         <h1>
           Bibliothèque TouchDesigner
-          <Link className="back-arrow" to="/what-i-do/">&#10232;</Link>
+          <Link className="back-arrow" to="/what-i-do/">
+            &#10232;<span>{ this.props.intl.formatMessage(messages.back) }</span>
+          </Link>
         </h1>
         <p>
           J'ai découvert le logiciel TouchDesigner dès le début de ma maîtrise en création numérique. Je suis rapidement tombé amoureux de son fonctionnement et des possibilités qu'il offrait. J'ai pu mettre en pratique mes connaissances sur TouchDesigner tout au long de ses deux dernières années : TouchDesigner est une des principales technologies utilisées dans les installations réalisées par le collectif PRISME. Je travaille sur cette bibliothèque en collaboration avec <a href="https://julesdelorge.fr/" target="_blank">Jules Delorge</a>.
@@ -57,7 +60,9 @@ class TdLibrary extends Component {
       <main className="work neo-traffic">
         <h1>
           TouchDesigner Library
-          <Link className="back-arrow" to="/what-i-do/">&#10232;</Link>
+          <Link className="back-arrow" to="/what-i-do/">
+            &#10232;<span>{ this.props.intl.formatMessage(messages.back) }</span>
+          </Link>
         </h1>
         <p>
           I discovered TouchDesigner at the beginning of my mastery in digital creation. I rapidly fell in love with it and all the possibilities it offers. I was able to learn and practice my skills with it all along these past two years: The PRISME collective makes great use of TouchDesigner in all its installations. I work on this library in collaboration with <a href="https://julesdelorge.fr/" target="_blank">Jules Delorge</a>.

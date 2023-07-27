@@ -1,0 +1,100 @@
+import React      from 'react';
+import { Link }   from 'react-router-dom';
+import dialog1IMG from 'src/assets/works/prisme/dialog.1.jpg';
+import dialog2IMG from 'src/assets/works/prisme/dialog.2.jpg';
+import dialog3IMG from 'src/assets/works/prisme/dialog.3.JPG';
+import embryo1IMG from 'src/assets/works/prisme/embryo.1.jpg';
+import embryo2IMG from 'src/assets/works/prisme/embryo.2.png';
+import embryo3IMG from 'src/assets/works/prisme/embryo.3.png';
+import servo1IMG  from 'src/assets/works/prisme/servo.1.JPG';
+import servo2IMG  from 'src/assets/works/prisme/servo.2.JPG';
+import servo3IMG  from 'src/assets/works/prisme/servo.3.JPG';
+import messages   from 'src/library/messages';
+
+export const PrismeEn = () => {
+  return (
+    <main className="work neo-traffic">
+      <h1>
+        Prisme collective
+        <Link className="back-arrow" to="/what-i-do/">
+          &#10232;<span>{ this.props.intl.formatMessage(messages.back) }</span>
+        </Link>
+      </h1>
+      <p>
+        Formed while at the mastery in digital arts at UQAT, the Prisme collective is made of six student-artists taking part of the emerging artists movement in Quebec. Our works take place in a research-creation context where we look to question the spectator while exploring new aspects both technological and theoretical.
+      </p>
+      <h2>Dialog</h2>
+      <p>
+        In December 2018, we presented our first interactive artistic installation: Dialog. It questions the people taking part in the installation on the language and the information it allows to transmit. The work is divided into several elements.<br />
+        First, Plexiglass plates are suspended in the air, on which animations appear. Then, two telephone handsets placed at each end of the line formed by the hanging plates. The interactors are invited to speak on the phones, to have a conversation. What they pronounce is analyzed in real time and influences the animations. This way, the animations become abstract representations of the components of language.
+      </p>
+      <div className="images-row">
+        <figure>
+          <img src={dialog2IMG} />
+          <figcaption>An interactor using a phone</figcaption>
+        </figure>
+        <figure>
+          <img src={dialog3IMG} />
+          <figcaption>An interactor seen through the animations</figcaption>
+        </figure>
+      </div>
+      <figure>
+        <img className="full-width-image" src={dialog1IMG} />
+        <figcaption>Dialog being installed</figcaption>
+      </figure>
+      <p>
+        Dialog uses several different technic in its operations. The telephone handsets are connected to iPhones on which an application designed for Dialog runs. It analyzes the audio stream to extract several pieces of information such as amplitude, frequency, and transcribes the spoken words into text. The application on each phone is wirelessly connected to the other to exchange audio streams, allowing interactors to have a conversion through the handsets. A machine-learning model, trained by us, is also present on each phone, and determines the emotion resulting from the speaker's words. All this information is then transmitted to the computer generating the visuals via a WebSocket.<br />
+        The visuals are generated with TouchDesigner. It collects information from the phones and uses it to animate and evolve the projected animations.
+      </p>
+      <p>
+        We were able to exhibit Dialog twice. First in December 2018 at the University of Quebec in Abitibi-Témiscamingue, then in November 2019 at L'Écart, an exhibition hall in Rouyn-Noranda, as part of the <i>Rencontres Interuniversitaires des Maîtrises en Art</i> (RIMA).
+      </p>
+      <h2>Embryo</h2>
+      <p>
+        Following Dialog, our desire was no longer simply to show a machine that analyzes, we wanted to explore the idea of a machine that learns. Thus was born Embryo, our second installation. Embryo positions itself as an entity observing the people around it, and using information it collects to sort through the videos shown on its faces. These videos move along its sides until they are correctly ordered.</p>
+      <figure>
+        <img className="full-width-image" src={embryo1IMG} />
+        <figcaption>Embryo</figcaption>
+      </figure>
+      <p>
+        In order to follow the movements of the interactors in the room, Embryo uses eight Kinects, four in the center, four on the outside of the room, to cover the entire ambulation space of the installation. The information from these Kinects is centralized in <b>Locator</b>, a C++ application I made. Locator makes it possible to cross the data of several Kinects or similar sensors, to carry out person tracking continuously across multiple sensors. This information is then transmitted to a computer with TouchDesigner generating the video streams to be projected.
+      </p>
+      <div className="images-row">
+        <figure>
+          <img src={embryo2IMG} />
+          <figcaption>Diagram showing the eight Kinects, the four projectors, and the computer generating the visuals.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src={embryo3IMG} />
+          <figcaption>Diagram showing the four video streams illuminating the four sides of Embryo.
+          </figcaption>
+        </figure>
+      </div>
+      <p>
+        We presented Embryo at UQAT in March 2019, then at Hexagram in Montreal in May of the same year.
+      </p>
+      <h2>Servo</h2>
+      <p>
+        In line with Embryo, where a machine analyzes its environment, we wanted to deepen this concept, but in a more explicit form. Our wish is to explore the impact of the subjectivity of the interactors on themselves. Servo presents two rectangular structures, representing machines, discussing what is going on around them. These machines question the actions of the interactors and try to interact with them. Their reactions, or not, feed the conversation of these two entities. In addition to presenting its part of the conversation, each machine also presents an abstract representation of its state of thought through an animation placed on the opposite side to the one presenting the text.
+      </p>
+      <figure>
+        <img className="full-width-image" src={servo2IMG} />
+        <figcaption>Excerpts from a conversation between the machine.</figcaption>
+      </figure>
+      <div className="images-row">
+        <figure>
+          <img src={servo1IMG} />
+          <figcaption>A kid interacts and plays with one of the machines.</figcaption>
+        </figure>
+        <figure>
+          <img src={servo3IMG} />
+          <figcaption>Each structure holds all the technical elements needed for it to work.</figcaption>
+        </figure>
+      </div>
+      <p>
+        Servo uses four Kinects, two per machine, to analyze what is going on in the room. They use Locator in the background to process the information received. The tracking data is then transmitted to a C++ application specially designed for Servo. It is this application which makes the two machines "live", by making them exchange messages and by making them react to the actions of the interactors. This application then transmits messages and status information to two TouchDesigner, one per machine, who are then responsible for displaying the dialogs and generating the animation for the machine they represent.
+      </p>
+      <p>We have presented Servo twice. In December 2019 at UQAT and early February 2020 at the <i>Nuit Blanche</i> of MacEwen University of Architecture in Sudbury, Ontario.</p>
+    </main>)
+}

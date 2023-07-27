@@ -21,6 +21,13 @@ class About extends Component {
         { this.props.intl.formatMessage(messages.openSourceLib) }
       </a>
     )
+
+    const videoTutorials = (
+      <a href="https://www.youtube.com/channel/UCqCOCoo6yvTCOvuVbTwn29g" target="_blank" rel="noopener noreferrer">
+        { this.props.intl.formatMessage(messages.videoTutorials) }
+      </a>
+    )
+
     const photographyLink = (
       <a href="https://www.instagram.com/valentindufois/" target="_blank" rel="noopener noreferrer">
         {this.props.intl.formatMessage(messages.photographyLink)}
@@ -35,10 +42,10 @@ class About extends Component {
     return (
       <main className="about">
         <h1>{ "int main(int argc, char * argv[]) {" }</h1>
-        <p>{ this.props.intl.formatHTMLMessage(messages.aboutP1, {uqatLink: uqatLink}) }</p>
+        <p>{ this.props.intl.formatMessage(messages.aboutP1, {uqatLink: uqatLink}) }</p>
         <p>{ this.props.intl.formatMessage(messages.aboutP2, {prismeLink: prismeLink}) }</p>
         <h2>{ this.props.intl.formatMessage(messages.interests) }</h2>
-        <p>{ this.props.intl.formatMessage(messages.interestsP1, {openSourceLib: openSourceLib}) }</p>
+        <p>{ this.props.intl.formatMessage(messages.interestsP1, {openSourceLib: openSourceLib, videoTutorials: videoTutorials}) }</p>
         <p>{ this.props.intl.formatMessage(messages.interestsP2, {photographyLink: photographyLink}) }</p>
         <h2>{ this.props.intl.formatMessage(messages.technicalSkills) }</h2>
         <h4>Web</h4>

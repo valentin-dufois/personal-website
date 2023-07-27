@@ -196,5 +196,23 @@
     "description": "locatorExcerpt",
     "defaultMessage": "locatorExcerpt",
     "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "about.interests.videoTutorials",
+    "description": "videoTutorials",
+    "defaultMessage": "[videoTutorials]",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "readMore",
+    "description": "readMore",
+    "defaultMessage": "[readMore]",
+    "filepath": "src/library/messages.js"
+  },
+  {
+    "id": "back",
+    "description": "back",
+    "defaultMessage": "[back]",
+    "filepath": "src/library/messages.js"
   }
 ]

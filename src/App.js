@@ -55,7 +55,6 @@ class App extends Component {
           <Header key="header" />
           <Switch>
             <Route path="/what-i-do" component={Work} />
-            {/*<Route path="/what-i-see" component={Pics} />*/}
             <Route component={About} />
           </Switch>
           <Footer />

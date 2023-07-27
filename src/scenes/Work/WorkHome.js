@@ -23,7 +23,9 @@ class WorkHome extends Component {
         <h2>{ this.props.intl.formatMessage(messages.tdLibraryTitle) }</h2>
         <p>
           { this.props.intl.formatMessage(messages.tdLibraryExcerpt) }
-          <Link className="open-arrow" to="td-library">&#10233;</Link>
+          <Link className="open-arrow" to="td-library">
+            &#10233;<span>{ this.props.intl.formatMessage(messages.readMore) }</span>
+          </Link>
         </p>
         <div className="thumbs-row">
           <img src={tdImage1} />
@@ -33,7 +35,9 @@ class WorkHome extends Component {
         <h2>{ this.props.intl.formatMessage(messages.neoTitle) }</h2>
         <p>
           { this.props.intl.formatMessage(messages.neoExcerpt) }
-          <Link className="open-arrow" to="neo-traffic">&#10233;</Link>
+          <Link className="open-arrow" to="neo-traffic">
+            &#10233;<span>{ this.props.intl.formatMessage(messages.readMore) }</span>
+          </Link>
         </p>
         <div className="thumbs-row">
           <img src={neoTrafficImage1} className="bordered" />
@@ -43,7 +47,9 @@ class WorkHome extends Component {
         <h2>{ this.props.intl.formatMessage(messages.prismeTitle) }</h2>
         <p>
           { this.props.intl.formatMessage(messages.prismeExcerpt) }
-          <Link className="open-arrow" to="prisme">&#10233;</Link>
+          <Link className="open-arrow" to="prisme">
+            &#10233;<span>{ this.props.intl.formatMessage(messages.readMore) }</span>
+          </Link>
         </p>
         <div className="thumbs-row">
           <img src={prisme1} className="bordered" />

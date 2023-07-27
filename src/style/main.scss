@@ -212,10 +212,21 @@ main {
       &:hover {
         padding-right: .4em;
         font-weight: 700;
+
+        span {
+          font-weight: 500;
+        }
       }
 
       &:active {
         padding-right: 1em;
+      }
+
+      span {
+        padding-left: .5em;
+        font-size: .8em;
+        //vertical-align: top;
+        font-weight: 500;
       }
     }
   }
@@ -273,10 +284,21 @@ main {
         &:hover {
           padding-left: .4em;
           font-weight: 700;
+
+          span {
+            font-weight: 500;
+          }
         }
 
         &:active {
           padding-left: 1em;
+        }
+
+        span {
+          padding-left: .5em;
+          font-size: .8em;
+          vertical-align: bottom;
+          font-weight: 400;
         }
       }
     }

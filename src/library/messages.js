@@ -166,4 +166,20 @@ export default defineMessages({
     description: 'locatorExcerpt',
     defaultMessage: 'locatorExcerpt',
   },
+  videoTutorials: {
+    id: 'about.interests.videoTutorials',
+    description: 'videoTutorials',
+    defaultMessage: '[videoTutorials]',
+  },
+  readMore: {
+    id: 'readMore',
+    description: 'readMore',
+    defaultMessage: '[readMore]',
+  },
+  back: {
+    id: 'back',
+    description: 'back',
+    defaultMessage: '[back]',
+  },
+
 })
