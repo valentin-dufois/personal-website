@@ -1,15 +1,15 @@
 import React      from 'react';
 import { Link }   from 'react-router-dom';
-import dialog1IMG from 'src/assets/works/prisme/dialog.1.jpg';
-import dialog2IMG from 'src/assets/works/prisme/dialog.2.jpg';
-import dialog3IMG from 'src/assets/works/prisme/dialog.3.JPG';
-import embryo1IMG from 'src/assets/works/prisme/embryo.1.jpg';
-import embryo2IMG from 'src/assets/works/prisme/embryo.2.png';
-import embryo3IMG from 'src/assets/works/prisme/embryo.3.png';
-import servo1IMG  from 'src/assets/works/prisme/servo.1.JPG';
-import servo2IMG  from 'src/assets/works/prisme/servo.2.JPG';
-import servo3IMG  from 'src/assets/works/prisme/servo.3.JPG';
-import messages   from 'src/library/messages';
+import dialog1IMG from '../../../assets/works/prisme/dialog.1.jpg';
+import dialog2IMG from '../../../assets/works/prisme/dialog.2.jpg';
+import dialog3IMG from '../../../assets/works/prisme/dialog.3.JPG';
+import embryo1IMG from '../../../assets/works/prisme/embryo.1.jpg';
+import embryo2IMG from '../../../assets/works/prisme/embryo.2.png';
+import embryo3IMG from '../../../assets/works/prisme/embryo.3.png';
+import servo1IMG  from '../../../assets/works/prisme/servo.1.JPG';
+import servo2IMG  from '../../../assets/works/prisme/servo.2.JPG';
+import servo3IMG  from '../../../assets/works/prisme/servo.3.JPG';
+import messages   from '../../../library/messages';
 
 export const PrismeFr = ({ intl }) => {
   return (
