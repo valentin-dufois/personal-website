@@ -1,34 +1,28 @@
-import React, {Component} from 'react'
-import {withRouter, Link, NavLink} from 'react-router-dom'
-import { injectIntl } from 'react-intl'
-import messages from '../library/messages'
-import Cookies from 'js-cookie'
+import React              from 'react';
+import { useTranslation } from 'react-i18next';
+import { Link, NavLink }  from 'react-router-dom';
 
-class Header extends Component {
-  toggleLocale = () => {
-    if(this.props.intl.locale === 'en')
-      Cookies.set('locale', 'fr')
-    else {
-      Cookies.set('locale', 'en')
-    }
+const Header = () => {
+  const { i18n, t } = useTranslation();
 
-    window.location.reload();
-  }
+  const handleToggleLocale = React.useCallback(() => {
+    i18n.changeLanguage(i18n.language === 'en' ? 'fr' : 'en');
+  }, []);
 
-  render() {
-    return [
-      <header key="header">
-        <Link to="/" className="title">val</Link>
-        <div id="language-switcher">
-          <a onClick={this.toggleLocale} href="#">{ this.props.intl.formatMessage(messages.headlines) }</a>
-        </div>
-      </header>,
-      <menu key="menu">
-        <NavLink to="/" exact>{ this.props.intl.formatMessage(messages.menuWhoIAm) }</NavLink>
-        <NavLink to="/what-i-do/">{ this.props.intl.formatMessage(messages.menuWhatIDo) }</NavLink>
-      </menu>
-    ]
-  }
-}
+  return <>
+    <header key="header">
+      <Link to="/" className="title">val</Link>
+      <div id="language-switcher">
+        <a onClick={ handleToggleLocale } href="#">
+          { t('header.switch-locale') }
+        </a>
+      </div>
+    </header>
+    <menu key="menu">
+      <NavLink to="/">{ t('menu.who-am-i') }</NavLink>
+      <NavLink to="/what-i-do">{ t('menu.what-i-do') }</NavLink>
+    </menu>
+  </>;
+};
 
-export default injectIntl(withRouter(Header));
+export default Header;

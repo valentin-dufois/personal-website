@@ -1,0 +1,38 @@
+import jsonToTableIMG from '../../../assets/works/td-library/json.to.table.png';
+import midiCHOPIMG    from '../../../assets/works/td-library/midi.chop.png';
+import tapTempoIMG    from '../../../assets/works/td-library/tap.tempo.png';
+
+J'ai découvert le logiciel TouchDesigner dès le début de ma maîtrise en création numérique. Je suis rapidement tombé amoureux de son fonctionnement et des possibilités qu'il offrait. J'ai pu mettre en pratique mes connaissances sur TouchDesigner tout au long de ses deux dernières années : TouchDesigner est une des principales technologies utilisées dans les installations réalisées par le collectif PRISME. Je travaille sur cette bibliothèque en collaboration avec <a href="https://julesdelorge.fr/" target="_blank">Jules Delorge</a>.
+
+L'idée d'un catalogue de composants réutilisables pour TouchDesigner nous est venue d'un parallèle entre la communauté encore jeune de TouchDesigner et les communautés plus matures de différents langages de programmation populaires. L’absence de centralisation du contenu communautaire est un détail qui nous a marqués. Les composants construits et partagés par la communauté sont éparpillés sur de nombreux sites différents, et sont parfois difficiles à dénicher. Le but de ce catalogue est donc de fournir un point central où trouver du contenu réutilisable pour TouchDesigner, et d'apporter une certaine uniformité entre les éléments proposés.
+
+<figure>
+  <img src={tapTempoIMG} className="full-width-image" />
+  <figcaption>Le CHOP Tap Tempo permet à l'utilisateur d'ajuster le tempo du projet avec un bouton, tel qu'un contrôleur MIDI par exemple.</figcaption>
+</figure>
+
+La première itération de la bibliothèque est encore en cours de mise en place. Nous voulons, pour la première version, offrir une première base d’éléments prêts à être utilisés. Le choix des composants que nous développons se fait selon plusieurs paramètres :
+
+* Il faut que ce composant permette de simplifier une tâche, mais dont la mise en place alourdie visuellement le projet, ou est redondante ;
+* Le composant doit apporter une fonctionnalité qui n'existe pas déjà, ou qui est difficile à manipuler ;
+* Le composant doit offrir un grand nombre de possibilités, il ne doit pas être limité à des cas d'utilisation spécifiques.
+
+Ces différentes conditions nous permettent de ne construire que des composants venant ajouter une réelle plus-value au logiciel. Les idées pour développer nos composants proviennent de nos expériences personnelles avec le logiciel, et des recommandations et commentaires faits par nos proches aussi utilisateurs de TouchDesigner.
+
+<figure>
+  <img src={jsonToTableIMG} className="full-width-image" />
+  <figcaption>Le DAT JSON to Table permet de transformer du JSON en un tableau manipulable facilement au sein de TouchDesigner.</figcaption>
+</figure>
+
+Avec cette bibliothèque de composants, notre souhait est d'apporter des outils facilitant le travail des utilisateurs, et leur permettant d'explorer plus en profondeur les possibilités de TouchDesigner. Tous les composants au format TOX sont conçus pour pouvoir être explorés et modifiés par les utilisateurs.
+
+Si la plupart des composants proposés prennent la forme de fichiers TOX, plusieurs fichiers de projet TOE vont aussi intégrer la bibliothèque. Agissant comme des compléments aux OP Snippets, le but de ces projets est de fournir des exemples simples et concrets d'utilisation de certaines fonctionnalités avancées de TouchDesigner, mais qui ne justifie pas le développement de composants. Enfin, notre bibliothèque intègre aussi plusieurs opérateurs personnalisés développés en C++ pour macOS et Windows. Ces composants apportent des fonctionnalités supplémentaires à TouchDesigner ou viennent proposer une alternative à certains éléments que nous jugeons difficiles d'utilisation.
+
+<figure>
+  <img src={midiCHOPIMG} className="full-width-image" />
+  <figcaption>
+    Les CHOP MIDI In et MIDI Out s'utilisent en lieu et place des Midi In et Out natifs de TouchDesigner. Ils permettent de s'affranchir complètement de la fenêtre MIDI Device Mapper, parfois cryptique.
+  </figcaption>
+</figure>
+
+Au final, nous espérons développer une quarantaine de composants, d'exemples, et d'opérateurs personnalisés pour la première version de la bibliothèque. Par la suite, toute personne qui le souhaite pourra apporter sa contribution à la bibliothèque. Afin de rendre la bibliothèque accessible au plus grand nombre, celle-ci est disponible sur <a href="https://github.com/Boisier/TD-Initiative-Library/tree/dev" target="_blank">Github</a> sous licence GPL-3.

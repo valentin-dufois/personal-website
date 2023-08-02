@@ -1,0 +1,42 @@
+import jsonToTableIMG from '../../../assets/works/td-library/json.to.table.png';
+import midiCHOPIMG    from '../../../assets/works/td-library/midi.chop.png';
+import tapTempoIMG    from '../../../assets/works/td-library/tap.tempo.png';
+
+I discovered TouchDesigner at the beginning of my mastery in digital creation. I rapidly fell in love with it and all the possibilities it offers. I was able to learn and practice my skills with it all along these past two years: The PRISME collective makes great use of TouchDesigner in all its installations. I work on this library in collaboration with <a href="https://julesdelorge.fr/" target="_blank">Jules Delorge</a>.
+
+The idea of a collection of reusable TouchDesigner components came from a comparison between the young TouchDesigner community and the more mature communities of popular programming languages. The absence of a hub where all the community content could be found struck us the most. All components shared by users are scattered across the web on different websites, often hard to find. The goal of this library is to offer a unique place where to find reusable content for TouchDesigner, with consistency between the elements.
+
+<figure>
+  <img src={tapTempoIMG} className="full-width-image" />
+  <figcaption>
+    The Tap Tempo CHOP adjust the project tempo using a user-provided input, such as a MIDI controller.
+  </figcaption>
+</figure>
+
+The first version of the library is still under construction. We want it to offer a selection of ready-to-use elements. We define which component we want to add using the following criterion:
+
+* The component has to simplify a task whose implementation usually clutters the project or is repetitive;
+* The component must bring a new functionality who is missing from TouchDesigner, or one who is hard to use;
+* The component should be relevant for as many situations as possible, it should not be limited to a specific situation.
+
+All these conditions allow us to build exclusively components working for the betterment of the software. Our ideas come from our own experience with TouchDesigner as well as inputs from our relatives using it.
+
+<figure>
+  <img src={jsonToTableIMG} className="full-width-image" />
+  <figcaption>
+    The JSON to Table DAT takes a JSON input and returns is content as a DAT Table that can be handled easily by TouchDesigner.
+  </figcaption>
+</figure>
+
+With this library we aim to bring tools easing the work of users, and allowing them to explore more deeply the possibilities offered by TouchDesigner. All components in TOX files are made to be explored and edited by users.
+
+The library offers components in TOX files, as well as examples in TOE files. The goal of these examples is to complete the OP Snippets by providing simple and explicit example of advanced techniques in TouchDesigner, but that does not justify the need for a specific component. Finally, the library features multiple custom operators made in C++ for macOS and Windows. These operators bring new functionalities to TouchDesigner or offer alternatives to existing one we deemed challenging to use.
+
+<figure>
+  <img src={midiCHOPIMG} className="full-width-image" />
+  <figcaption>
+    The MIDI In and MIDI Out CHOP are used instead of the native ones. They allow for bypassing the cryptic MIDI Device Mapper window.
+  </figcaption>
+</figure>
+
+Our wish for the first release of the library is to offers around forty elements, examples and custom operators. Following this release, anyone who wants to contribute with its own work is welcome to do so. To make the library as accessible as possible, it is available on <a href="https://github.com/Boisier/TD-Initiative-Library/tree/dev" target="_blank">Github</a>, under the GPL-3 licence.
