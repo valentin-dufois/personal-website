@@ -1,6 +1,9 @@
 import React              from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link }           from 'react-router-dom';
+import connect1           from '../../assets/works/connect/connect.broadcast.png';
+import connect2           from '../../assets/works/connect/connect.inventory.png';
+import connect3           from '../../assets/works/connect/connect.planner-1.png';
 
 import neoTrafficImage1 from '../../assets/works/neo-traffic/neo.markets.png';
 import neoTrafficImage3 from '../../assets/works/neo-traffic/neo.news.shd.png';
@@ -9,10 +12,11 @@ import neoTrafficImage2 from '../../assets/works/neo-traffic/neo.weather.fcl.png
 import prisme1  from '../../assets/works/prisme/dialog.3.JPG';
 import prisme2  from '../../assets/works/prisme/embryo.1.jpg';
 import prisme3  from '../../assets/works/prisme/servo.2.JPG';
+import runner1  from '../../assets/works/runner/runner.noise.png';
 import tdImage3 from '../../assets/works/td-library/holly.mess.png';
 import tdImage2 from '../../assets/works/td-library/set.op.color.png';
-
 import tdImage1 from '../../assets/works/td-library/tap.tempo.thumb.png';
+
 
 const WorkHome = () => {
   const { t } = useTranslation();
@@ -28,9 +32,9 @@ const WorkHome = () => {
         </Link>
       </p>
       <div className="thumbs-row">
-        {/*<img src={ tdImage1 }/>*/}
-        {/*<img src={ tdImage3 }/>*/}
-        {/*<img src={ tdImage2 }/>*/}
+        <img src={ connect1 }/>
+        <img src={ connect2 }/>
+        <img src={ connect3 }/>
       </div>
       <h2>{ t('work.excerpts.runner-title') }</h2>
       <p>
@@ -40,9 +44,7 @@ const WorkHome = () => {
         </Link>
       </p>
       <div className="thumbs-row">
-        {/*<img src={ tdImage1 }/>*/}
-        {/*<img src={ tdImage3 }/>*/}
-        {/*<img src={ tdImage2 }/>*/}
+        <img src={ runner1 }/>
       </div>
       <h2>{ t('work.excerpts.prisme-title') }</h2>
       <p>

@@ -2,7 +2,7 @@ import React              from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link }           from 'react-router-dom';
 
-import NeoConnectEn from './NeoConnectFR.mdx';
+import NeoConnectEn from './NeoConnectEN.mdx';
 
 const NeoConnect = () => {
   const { i18n, t } = useTranslation();

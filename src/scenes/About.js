@@ -16,6 +16,8 @@ const About = () => {
     }
   }, []);
 
+  console.log(i18n.language)
+
   return (
       <main className="about">
         <h1>{ 'int main(int argc, char * argv[]) {' }</h1>

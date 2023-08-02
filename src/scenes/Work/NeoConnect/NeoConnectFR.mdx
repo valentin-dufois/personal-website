@@ -1,72 +1,70 @@
-These past three year working for <a href="https://neo-ooh.com/" target="_blank" rel="noreferer">Neo</a>, I conceived and developped an internal platform tailored to the need of the company.
+Au cours des trois dernières années à travailler chez <a href="https://neo-ooh.com/" target="_blank" rel="noreferer">Neo</a>, j'ai conçu et développé une plateforme interne pour répondre aux besoins spécifiques de l'entreprise.
 
-Neo is a digital advertising company with screens all around Canada. Connect allows easy scheduling of content on the screens, listing inventories in a structure that make sense with the processes of the company, and provide a powerful and effeciant sales tool.
+Neo est une entreprise d'affichage numérique possédant des écrans partout au Canada. Connect permet de faciliter la gestion du contenu affiché sur chacun des écrans, de recenser notre inventaire dans une structure qui fait sens avec le fonctionnement de l'entreprise, et d'offrir un outil de vente puissant et performant.
 
-Connect allows for granular user management, and is entirely available in both french and english.
+Connect offre une gestion des utilisateurs granulaire, et se déploie entièrement en anglais et en français.
 
-Connect is made of multiple modules, each with their specific purpose, but with deep integration with each others.
+Connect se déploie en plusieurs modules, offrant chacun des fonctionnalités précises, mais s'intégrant fortement avec les autres.
 
-## Broadcast
+## Diffusion
 
-Connect's broadcast module was the first section created. Originally, it was conceived as a new version created from scratch of <Link to="/works/neo-traffic">Ad-Direct</Link>; it quickly outgrew this scope.
+Le module de diffusion de Connect est le premier à avoir été mis en place.
+D’abord conçu comme une nouvelle version reconstruite à partir de zéro de la plateforme précédente <Link to="/works/neo-traffic">Ad-Direct</Link>.
 
-The broadcast module offer a unified scheduling and monitoring interface for managing broadcasting campaigns, independently of the actual broadcasting system used beneath.<br />
-This makes it possible to control a network of heterogeneous screens and system from a single place.
+Le module de diffusion est conçu pour fournir une interface  de planification de campagnes d'affichage agnostique du système de diffusion effectivement utilisé pour l'infrastructure. <br />
+De cette manière, il est possible de contrôler un réseau d'écrans utilisant des systèmes de diffusion hétérogènes depuis une unique interface.
 
-This is made possible thanks to an adapter system. Connect describes campagns as they exists in a neutral format, that is then used by each adapter to replicate it on its own system. As of now, Connect is able to schedule campaigns on BroadSign, PiSignage and Navori.
+Ceci est rendu possible grâce à un système d'adapteurs. Connect décrit les campagnes telles que programmées dans un format neutre, que les adapteurs reçoivent et répliquent sur leur système respectif. Pour l'instant, Connect possède des adapteurs pour BroadSign, PiSignage et Navori.
 
-Campaigns monitoring is centralized and available in the same interface, making it fast and simple to follow the performances of campaigns.
+Le suivi des performances des campagnes est lui aussi centralisé, et permet ainsi un suivi simplifié.
 
-Campaigns broadcast locations is decided by selecting products, as defined in the inventory.
+Les emplacements de diffusion des campagnes sont déterminés en sélectionnant des produits, spécifiés dans l'inventaire
 
-## Inventory
+## Inventaire
 
-Neo's inventory structure follows a `property > product` pattern. This struture limits information duplication and give operators and commercial a structure to browse that resonates with the concepts they use on a daily basis.
+L'inventaire de Neo se structure selon une notion de `propriété > produits`. Cette structure permet de limiter la duplication des informations, et d'offrir aux opérateurs et aux commerciaux une structure qui fait sens.
 
-As time went by, the quantity of information describing properties and products grew by a lot.<br />
-First, properties' traffic, then price handling, tenants directory for malls, then impressions calculations, demographic data, pictures, etc.
+Au fil du temps, le nombre d'informations sur les propriétés et produits stockés dans Connect n'a cessé d'augmenter. <br />
+D'abord l'achalandage des propriétés, puis la gestion des prix, l'annuaire des centres commerciaux, les calculs d'impressions, des données démographiques, des photographies, etc.
 
-Our inventory is also available on various digital out of home programmatic providers. This implies that we have to keep our inventory up to date on multiple platforms.<br />
-Connect handles all this: by integrating with the other platforms API, updates to our inventory made on Connect are automatically propagated. This system can work both ways, allowing Connect inventory to be bases on an external source.<br />
-Today, Connect supports synchronising inventories with Odoo, Hivestack, BroadSign Reach, Atedra and Vistar.
+Notre inventaire est présent sur des plateformes d'affichage programmatique. Cela requiert de s'assurer que celui-ci est bien identique sur chacune de ces ces différentes plateformes.<br />
+Connect gère cela automatiquement en synchronisant les produits mis à jour automatiquement. Aujourd'hui, Connect peut synchroniser des inventaires sur Odoo, Hivestack, BroadSign Reach, Atedra et Vistar.
 
-This inventory also provide our salespersons with all the informations they need.
+Toutes ces informations permettent d'offrir aux commerciaux un outil des ventes spécifiques à Neo.
 
-## The Planner
+## Le Planner
 
-Connect's Planner is Neo's sales tool. It helps build precise, detailled broadcast campaigns quickly and efficiently.
+Le Planner est l'outil de vente de Neo. Il permet de construire des campagnes de diffusion à grande échelle, précises, et détaillées facilement et rapidement.
 
-The Planner has all the basics: product selection based on category, province and network, discounts, production costs, etc. But the true strength of the Planner lies in its filters.<br />
-They are specific refining functions. Here's some of them:
+On trouve les outils de base: sélection des produits selon leurs catégorie, province ou réseau, ajout de remises sur les prix, gestion des frais de production. Mais la véritable puissance du Planner, vient de ses filtres.
 
-* **Points of Interest**: Allows placing POIs on the map, either by address, or by name (Time Hortons, banks, etc.) and to limit products selection to those within a certain radius of those places.
-* **Polygons**: Allows drawing shapes on the map to limit selection
-* **Demographic Filters/Vividata**: Allows filtering properties on demographic indexes; Has more than 5000 variables available.
-* **Boundaries**: Uses census geographic data; Allows placing boundaries for cities, forward sortation areas, and electoral districts on the map.
-* And others to help filtering products by tags, technical specifications, etc.
+Ceux-ci permettent de raffiner la première sélection selon de nombreux critères. On en trouve une dizaine:
 
-All these filters can be grouped together to enable additional logic. It is possible to choose if a product needs to pass all filters or only some filters to be included. The effect of a filter can be inverted (eg: No products in this polygon.)<br />
-Filters results are presented in the list view, describing why a product passed the results.
+* **Points d'intérêts**: Permets de placer des POIs sur la carte, soit par adresse, soit par nom (Tim Hortons, Banques, etc.), et de limiter la sélection aux propriétés se trouvant dans un rayon choisi de ces lieues.
+* **Polygones**: permets de dessiner des zones sur la carte avec la souris.
+* **Filtres démographiques/Vividata**: Permet de filtrer les propriétés selon des index de représentation de l'achalandage. Permettant d'utiliser des informations parmi plus de 5000 variables.
+* **Délimitation**: Ce filtre utilise les données géographiques de Census Canada pour permettre de placer facilement sur la carte les délimitations géographiques de n'importe quelle ville, circonscription électorale, région de tri d'acheminement.
+* Et d'autres, permettant de filtrer les produits selon d'autres propriétés (Étiquettes, caractéristiques techniques, etc.)
 
-The campaign performances and prices are automatically recalculated on each change.
+Tous ces filtres peuvent être groupés, et la logique les combinant peut être modifiée. Il est ainsi possible de choisir si un filtre inclut ou exclus des produits (ex.: pas de produits dans ce polygone), et si les filtres s'additionnent ou se cumulent (Un produit doit passer tous les filtres ≠ Un produit n'a besoin de passer qu'un seul des filtres.)<br />
+Les résultats des filtres apparaissent dans la vue en liste, indiquant pourquoi un produit spécifique a passé les filtres.
 
-The Planner's ease of use and the amount of information it provides, makes it a tool not only used by our salespersons, but also by many different persons in the company, as a way to get insightful information on our network efficiently.
+Les performances et les prix des campagnes sont recalculés automatiquement à chaque changement.
 
-Campaigns created in the planner can also be shared to external persons through a simplified, readonly interface.
+La rapidité et la fluidité des calculs du Planner, en font un outil utilisé non seulement par les commerciaux, mais aussi par différentes personnes chez Neo pour obtenir des informations facilement sur nos réseaux.
 
-Once a campaign is signed, its performances can be monitored in the contract section.
+Les plans créés dans le Planner peuvent ensuite être partagés par un lien conduisant à une interface simplifiée.
 
-## Contracts
+Une fois un contrat conclu, les performances de ses campagnes peuvent aussi être suivies dans Connect.
 
-Contracts monitoring is done every day. It is necessary as way to ensure that everything is running smoothly.
+## Contrats
 
-The Contracts section of Connect centralize all the performances data collected from the our broadcast systems. Previously, our operator had to check multiple different platforms interfaces to get all the informations. They are now available in a single, unified interface. Campaigns created in Connect as well as those created directly in the Broadcast system can be tracked here.<br />
-It is also possible to request screenshots of the currently playing ads to use as proof of play. Connect even provide an automated system to mock the screenshots directly onto pictures of the products.
+Le suivi des contrats est fait tout au long des périodes de diffusion. Il est nécessaire pour s'assurer que les campagnes de diffusion fonctionnent correctement. <br />
 
----
+La section Contrats de Connect centralise toutes les informations de performances des campagnes, qu'elles soient planifiées dans Connect ou directement dans le système de diffusion. <br />
+Il est alors possible de demander des captures d'écrans, et de générer des rapports de performances pour transmettre aux clients.
 
-As year went bide, Connect rapidly outgrew its original purpose. From a simple scheduling system meant to give autonomy to some of our partners, it became on integral parts of all the processes at Neo.<br />
 
-Working all these years on this project, I gained an understanding of the inner workings of Neo's teams, that helped me corner precisely the needs.
-It appreciate a lot knowing the work I have done helps many people on their everyday tasks.
+Au fil de ces années de travail sur Connect, j'ai appris en profondeur le fonctionnement des équipes de Neo, me permettant de cerner précisément les besoins, et de fournir des outils facilitant le travail de nombreuses personnes, et permettant d'acquérir de nouveaux points de vus sur nos systèmes. <br />
+Connect est aujourd'hui parfaitement intégré au processus interne de Neo.
 
