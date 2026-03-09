@@ -25,7 +25,7 @@
     "excerpts": {
       "connect-title": "Connect",
       "connect-desc": "As the sole engineer at NEO-OOH (Quebecor Media), I designed and built their entire internal platform from scratch, from stack selection and architecture to database design, UI, and deployment.",
-      "dvin-title": "D'Vin",
+      "dvin-title": "DVin",
       "dvin-desc": "A Web3 platform for tokenized wine bottles built on Solana. Users buy, trade, and redeem Digital Corks (NFTs) representing real wine bottles.",
       "autotrader-title": "AutoTrader",
       "autotrader-desc": "A personal algorithmic trading platform built on Interactive Brokers. Backtesting, Bayesian optimization, and live execution across 11+ trading algorithms.",
@@ -44,7 +44,7 @@
       "title": "Connect"
     },
     "dvin": {
-      "title": "D'Vin"
+      "title": "DVin"
     },
     "autotrader": {
       "title": "AutoTrader"

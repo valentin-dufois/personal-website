@@ -25,7 +25,7 @@
     "excerpts": {
       "connect-title": "Connect",
       "connect-desc": "En tant que seul développeur chez NEO-OOH (Québecor Media), j'ai conçu et construit l'intégralité de leur plateforme interne de zéro, du choix du stack et de l'architecture à la base de données, l'interface et le déploiement.",
-      "dvin-title": "D'Vin",
+      "dvin-title": "DVin",
       "dvin-desc": "Une plateforme Web3 de bouteilles de vin tokenisées sur Solana. Les utilisateurs achètent, échangent et utilisent des Digital Corks (NFTs) représentant de vraies bouteilles.",
       "autotrader-title": "AutoTrader",
       "autotrader-desc": "Une plateforme personnelle de trading algorithmique sur Interactive Brokers. Backtesting, optimisation bayésienne, et exécution en direct avec plus de 11 algorithmes.",
@@ -44,7 +44,7 @@
       "title": "Connect"
     },
     "dvin": {
-      "title": "D'Vin"
+      "title": "DVin"
     },
     "autotrader": {
       "title": "AutoTrader"
