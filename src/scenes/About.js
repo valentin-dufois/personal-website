@@ -10,13 +10,11 @@ const About = () => {
   const pdfUrl = React.useMemo(() => {
     switch (i18n.language) {
       case 'fr':
-        return 'VALENTIN_DUFOIS_CV.pdf';
+        return 'DUFOIS_VALENTIN_CV_FR.pdf';
       default:
-        return 'VALENTIN_DUFOIS_CV.pdf';
+        return 'DUFOIS_VALENTIN_CV_EN.pdf';
     }
   }, []);
-
-  console.log(i18n.language)
 
   return (
       <main className="about">
@@ -25,18 +23,18 @@ const About = () => {
         <h2>{ t('about.skills') }</h2>
         <h4>Web</h4>
         <ul className="skills-list">
-          <li>HTML5, CSS3, JS, PHP, SQL</li>
+          <li>PHP, Typescript, SQL, Python, HTML/CSS</li>
           <li>
-            Node.js, React.js, Laravel
+            Laravel, Symfony, Node.js, React.js
             <span className="wtf-comment wtf-5">.js, js.js, omgIHateThisTrend.js</span>
           </li>
-          <li>Apache2, WebSocket</li>
+          <li>Nginx, WebSocket, Docker, PostgreSQL</li>
         </ul>
         <h4>Software</h4>
         <ul className="skills-list">
           <li>C/C++, Swift, Python, OpenGL, Metal</li>
-          <li>Xcode, Visual Studio</li>
-          <li>gcc, clang/llvm, Make</li>
+          <li>Xcode, Visual Studio, JetBrain IDEs</li>
+          <li>bash, gcc, clang/llvm, Make</li>
           <li>AppKit, UIKit, Boost.Asio, ncurses</li>
         </ul>
         <h4>{ t('about.skills-visuals') }</h4>
@@ -51,13 +49,13 @@ const About = () => {
         <h4>{ t('about.skills-transversal') }</h4>
         <ul className="skills-list">
           <li>
-            git, GitHub
+            git, GitHub, Bitbucket, Jira
             <span className="wtf-comment wtf-4">
               { t('about.comment-using-website') }
             </span>
           </li>
           <li>
-            Vim, bash
+            Bash, vim
             <span className="wtf-comment wtf-3">&nbsp;:wq!!!!</span>
           </li>
           <li>
