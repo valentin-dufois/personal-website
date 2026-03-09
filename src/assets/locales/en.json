@@ -8,31 +8,46 @@
   },
   "about": {
     "cv": "Resume",
+    "open-to-work": "Currently open to new opportunities as a Senior Developer or Tech Lead.",
     "skills": "As a list",
-    "skills-network": "Network",
-    "skills-printer": "Printer maintenance",
+    "skills-infra": "Infrastructure",
     "skills-transversal": "Transversal",
     "skills-visuals": "Visuals",
     "skills-visual-software": "Sketch, Photoshop, Illustrator & friends",
     "comment-already-said": "you said it already",
-    "comment-network": "DHCP, DNS, routing and more",
-    "comment-using-website": "Because using a website is a skill now ?",
-    "comment-printers": "I will not repair yours"
+    "comment-using-website": "Because using a website is a skill now ?"
   },
   "work": {
     "read-more": "read more",
     "back": "back",
+    "section-recent": "Recent work",
+    "section-past": "Earlier work",
     "excerpts": {
       "connect-title": "Connect",
-      "connect-desc": "I conceived and programmed an internal platform centralizing various tasks and information at Neo-OOH (Now Québecor Media)",
+      "connect-desc": "As the sole engineer at NEO-OOH (Quebecor Media), I designed and built their entire internal platform from scratch, from stack selection and architecture to database design, UI, and deployment.",
+      "dvin-title": "D'Vin",
+      "dvin-desc": "A Web3 platform for tokenized wine bottles built on Solana. Users buy, trade, and redeem Digital Corks (NFTs) representing real wine bottles.",
+      "autotrader-title": "AutoTrader",
+      "autotrader-desc": "A personal algorithmic trading platform built on Interactive Brokers. Backtesting, Bayesian optimization, and live execution across 11+ trading algorithms.",
+      "dealership-title": "Dealership Analytics",
+      "dealership-desc": "Sales data analysis platform for car dealerships. Work in progress.",
       "neo-title": "Neo-OOH",
-      "neo-desc": "I've been working for four years as a freelance web developer with the Neo-OOH team, an advertising network in Canada. I made multiple projects for them, from their website to dynamic contents played on their screens.",
+      "neo-desc": "Before Connect, I built multiple projects for Neo-OOH as a freelance developer: their public website, a content management platform handling 60M+ monthly impressions, and real-time dynamic content systems.",
       "prisme-title": "Prisme",
-      "prisme-desc": "I’ve been a member of the Prisme collective since 2018. Together, we make interactive and immersive art installations combining technology and ontological questioning.",
+      "prisme-desc": "Interactive and immersive art installations combining technology and ontological questioning, as part of a six-person artist collective.",
       "runner-title": "Runner",
       "runner-desc": "A fast fuzzy finder for TouchDesigner",
       "td-library-title": "TouchDesigner Library",
-      "td-library-desc": "I work on a collection of reusable components made to ease the learning curve of TouchDesigner and improve its accessibility. The components are built using logic notions, C++, Python and more."
+      "td-library-desc": "A collection of reusable components made to ease the learning curve of TouchDesigner and improve its accessibility."
+    },
+    "connect": {
+      "title": "Connect"
+    },
+    "dvin": {
+      "title": "D'Vin"
+    },
+    "autotrader": {
+      "title": "AutoTrader"
     },
     "neo-traffic": {
       "title": "Neo Traffic"

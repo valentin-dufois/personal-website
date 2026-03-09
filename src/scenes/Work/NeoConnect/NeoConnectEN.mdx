@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom'
 import broadcast2 from '../../../assets/works/connect/connect.broadcast-2.png';
-
 import broadcast1 from '../../../assets/works/connect/connect.broadcast.png';
 import contract1  from '../../../assets/works/connect/connect.contracts.png';
 import inventory2 from '../../../assets/works/connect/connect.inventory-2.png';
@@ -9,17 +7,17 @@ import planner1   from '../../../assets/works/connect/connect.planner-1.png';
 import planner2   from '../../../assets/works/connect/connect.planner-2.png';
 import planner3   from '../../../assets/works/connect/connect.planner-3.png';
 
-These past three years working for <a href="https://neo-ooh.com/" target="_blank" rel="noreferer">Neo</a>, I conceived and developed an internal platform tailored to the need of the company.
+I was the **sole engineer** on Connect for four years at <a href="https://neo-ooh.com/" target="_blank" rel="noreferrer">NEO-OOH</a> (now Quebecor Media). I designed and built this platform entirely from scratch, handling everything from stack selection and architecture to database schema, UI, and deployment.
 
-Neo is a digital advertising company with screens all around Canada. Connect allows easy scheduling of content on the screens, listing inventories in a structure that make sense with the processes of the company, and provide a powerful and efficient sales tool.
+Neo is a digital advertising company operating screens across Canada. Connect became the central nervous system of the company, handling everything from ad scheduling to inventory management to sales tooling. What started as a simple replacement for an aging scheduling system grew into a platform used daily by every team in the company.
 
-Connect allows for granular user management, and is entirely available in both French and English.
+The stack: **Laravel** backend, **React** frontend, **PostgreSQL** database, running on **Nginx**. Bilingual (EN/FR), with granular user management and role-based access control.
 
-Connect is made of multiple modules, each with their specific purpose, but with deep integration with each other.
+Connect is built as a modular platform. Each module serves a specific purpose but integrates deeply with the others.
 
 ## Broadcast
 
-Connect's broadcast module was the first section created. Originally, it was conceived as a new version created from scratch of <Link to="/works/neo-traffic">Ad-Direct</Link>; it quickly outgrew this scope.
+The broadcast module was the first piece built. It provides a unified scheduling and monitoring interface for ad campaigns, regardless of the underlying broadcast system.
 
 <figure>
   <img className="full-width-image" src={broadcast1} />
@@ -28,12 +26,9 @@ Connect's broadcast module was the first section created. Originally, it was con
   </figcaption>
 </figure>
 
-The broadcast module offers a unified scheduling and monitoring interface for managing broadcasting campaigns, independently of the actual broadcasting system used beneath.<br />
-This makes it possible to control a network of heterogeneous screens and system from a single place.
+I designed an **adapter system** that describes campaigns in a neutral format, then translates them to each broadcast platform's native API. This makes it possible to manage a heterogeneous network of screens and systems from a single interface. Connect supports adapters for BroadSign, PiSignage, and Navori.
 
-This is made possible thanks to an adapter system. Connect describes campaigns as they exist in a neutral format, which is then used by each adapter to replicate it on its own system. As of now, Connect is able to schedule campaigns on BroadSign, PiSignage and Navori.
-
-Campaigns monitoring is centralized and available in the same interface, making it fast and simple to follow the performances of campaigns.
+Campaign monitoring is centralized, making it fast to track performance across all platforms at once.
 
 <figure>
   <img className="full-width-image" src={broadcast2} />
@@ -42,25 +37,20 @@ Campaigns monitoring is centralized and available in the same interface, making 
   </figcaption>
 </figure>
 
-Campaigns broadcast locations are decided by selecting products, as defined in the inventory.
-
 ## Inventory
 
-Neo's inventory structure follows a `property > products` pattern. This structure limits information duplication and gives operators and commercials a structure to browse that resonates with the concepts they use on a daily basis.
+Neo's inventory follows a `property > products` structure I designed to match how the teams actually think about their network.
 
-As time went by, the quantity of information describing properties and products grew by a lot.<br />
-First, properties' traffic, then price handling, tenants directory for malls, then impression calculations, demographic data, pictures, etc.
+Over time, the data grew significantly: traffic numbers, pricing, tenant directories, impression calculations, demographic data, photos, and more.
 
 <figure>
   <img className="full-width-image" src={inventory1} />
   <figcaption>
-    All the informations about a product
+    All the information about a product
   </figcaption>
 </figure>
 
-Our inventory is also available on various digital out of home programmatic providers. This implies that we have to keep our inventory up to date on multiple platforms.<br />
-Connect handles all this: by integrating with the other platforms API, updates to our inventory made on Connect are automatically propagated. This system can work both ways, allowing Connect inventory to be based on an external source.<br />
-Today, Connect supports synchronizing inventories with Odoo, Hivestack, BroadSign Reach, Atedra and Vistar.
+The inventory also needs to stay synchronized across multiple programmatic advertising platforms. I built a **sync engine** that propagates updates to Odoo, Hivestack, BroadSign Reach, Atedra, and Vistar automatically, supporting both push and pull directions.
 
 <figure>
   <img className="full-width-image" src={inventory2} />
@@ -69,57 +59,47 @@ Today, Connect supports synchronizing inventories with Odoo, Hivestack, BroadSig
   </figcaption>
 </figure>
 
-This inventory also provides our salespeople with all the information they need.
-
 ## The Planner
 
-Connect's Planner is Neo's sales tool. It helps build precise, detailed broadcast campaigns quickly and efficiently.
+The Planner is Neo's sales tool. It lets salespeople build detailed, large-scale ad campaigns quickly.
 
 <figure>
   <img className="full-width-image" src={planner1} />
   <figcaption>
-    The planner's map, with the city of montreal boundary and Tim Hortons shown in red.
+    The planner's map, with the city of Montreal boundary and Tim Hortons shown in red.
   </figcaption>
 </figure>
 
-The Planner has all the basics: product selection based on categories, provinces and networks, discounts, production costs, etc. But the true strength of the Planner lies in its filters.<br />
-Here's some of them:
+Beyond the basics (product selection, discounts, production costs), the real power is in the **filter system** I built:
 
-* **Points of Interest**: Allows placing POIs on the map, either by address, or by name (Time Hortons, banks, etc.) and to limit products selection to those within a certain radius of those places.
-* **Polygons**: Allows drawing shapes on the map to limit selection
-* **Demographic Filters/Vividata**: Allows filtering properties on demographic indexes; It has more than 5000 variables available.
-* **Boundaries**: Uses census geographic data; Allows placing boundaries for cities, forward sortation areas, and electoral districts on the map.
-* And others to help filter products by tags, technical specifications, etc.
+* **Points of Interest**: Place POIs on the map by address or name (Tim Hortons, banks, etc.) and limit selection to products within a chosen radius.
+* **Polygons**: Draw shapes on the map to define geographic zones.
+* **Demographic Filters/Vividata**: Filter properties using over 5000 demographic variables.
+* **Boundaries**: Census data for cities, forward sortation areas, and electoral districts.
+* Tags, technical specs, and more.
 
-All these filters can be grouped together to enable additional logic. It is possible to choose if a product needs to pass all filters or only some filters to be included. The effect of a filter can be inverted (e.g.: No products in this polygon.)<br />
-Filters results are presented in the list view, describing why a product passed the results.
-
-The campaign performances and prices are automatically recalculated on each change.
+Filters can be grouped with configurable logic (AND/OR), and each can be inverted. Results explain exactly why a product was included or excluded.
 
 <div className="images-row">
   <figure>
     <img src={planner2} />
     <figcaption>
-      The list view of a campaign, showing all the products calculated details
+      The list view showing calculated details for all products
     </figcaption>
   </figure>
   <figure>
     <img src={planner3} />
     <figcaption>
-      Filters results explaining why a product is included
+      Filter results explaining why a product is included
     </figcaption>
   </figure>
 </div>
 
-The Planner's ease of use and the amount of information it provides, makes it a tool not only used by our salespeople, but by many different peoples in the company, as a way to get insightful information on our network efficiently.
-
-Campaigns created in the planner can also be shared to external peoples through a simplified, read-only interface.
-
-Once a campaign is signed, its performances can be monitored in the contract section.
+The Planner became a tool used not just by sales, but by many different teams at Neo for getting insights on the network. Campaigns can be shared externally via a simplified read-only link.
 
 ## Contracts
 
-Contracts monitoring is done every day. It is necessary as ways to ensure that everything is running smoothly.
+Contract monitoring tracks campaign performance across all broadcast systems in a single view.
 
 <figure>
   <img className="full-width-image" src={contract1} />
@@ -128,12 +108,8 @@ Contracts monitoring is done every day. It is necessary as ways to ensure that e
   </figcaption>
 </figure>
 
-The Contracts section of Connect centralize all the performances data collected from the broadcast systems. Previously, our operator had to check multiple different platforms interfaces to get all the information. They are now available in a single, unified interface. Campaigns created in Connect as well as those created directly in the Broadcast system can be tracked here.<br />
-It is also possible to request screenshots of the currently playing ads to use as proof-of-play. Connect even provides an automated system to mock the screenshots directly onto pictures of the products.
+Previously, operators had to check multiple platform interfaces. Connect centralizes everything and supports automated screenshot generation for proof-of-play, even mocking the screenshots onto photos of the actual screens.
 
 ---
 
-As year went bide, Connect rapidly outgrew its original purpose. From a simple scheduling system meant to give autonomy to some of our partners, it became an integral part of all the processes at Neo.<br />
-
-Working all these years on this project, I gained an understanding of the inner workings of Neo's teams, that helped me corner precisely the needs.
-I appreciate knowing the work I have done helps many people on their everyday tasks.
+Connect went from a one-module tool to a platform that touches every part of Neo's operations. Building it solo over four years gave me deep experience in designing systems that scale with a company's needs, and the satisfaction of knowing it made a real difference in people's day-to-day work.

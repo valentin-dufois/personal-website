@@ -1,72 +1,115 @@
-import { Link } from 'react-router-dom'
+import broadcast2 from '../../../assets/works/connect/connect.broadcast-2.png';
+import broadcast1 from '../../../assets/works/connect/connect.broadcast.png';
+import contract1  from '../../../assets/works/connect/connect.contracts.png';
+import inventory2 from '../../../assets/works/connect/connect.inventory-2.png';
+import inventory1 from '../../../assets/works/connect/connect.inventory.png';
+import planner1   from '../../../assets/works/connect/connect.planner-1.png';
+import planner2   from '../../../assets/works/connect/connect.planner-2.png';
+import planner3   from '../../../assets/works/connect/connect.planner-3.png';
 
-Au cours des trois dernières années à travailler chez <a href="https://neo-ooh.com/" target="_blank" rel="noreferer">Neo</a>, j'ai conçu et développé une plateforme interne pour répondre aux besoins spécifiques de l'entreprise.
+J'ai été le **seul ingénieur** sur Connect pendant quatre ans chez <a href="https://neo-ooh.com/" target="_blank" rel="noreferrer">NEO-OOH</a> (maintenant Québecor Media). J'ai conçu et construit cette plateforme entièrement de zéro, du choix du stack et de l'architecture au schéma de base de données, l'interface et le déploiement.
 
-Neo est une entreprise d'affichage numérique possédant des écrans partout au Canada. Connect permet de faciliter la gestion du contenu affiché sur chacun des écrans, de recenser notre inventaire dans une structure qui fait sens avec le fonctionnement de l'entreprise, et d'offrir un outil de vente puissant et performant.
+Neo est une entreprise d'affichage numérique opérant des écrans partout au Canada. Connect est devenu le système nerveux central de l'entreprise, gérant tout, de la planification publicitaire à la gestion d'inventaire en passant par les outils de vente. Ce qui a commencé comme un simple remplacement d'un vieux système de planification est devenu une plateforme utilisée quotidiennement par toutes les équipes.
 
-Connect offre une gestion des utilisateurs granulaire, et se déploie entièrement en anglais et en français.
+Le stack: **Laravel** en backend, **React** en frontend, **PostgreSQL** pour la base de données, le tout sur **Nginx**. Bilingue (FR/EN), avec une gestion granulaire des utilisateurs et un contrôle d'accès basé sur les rôles.
 
-Connect se déploie en plusieurs modules, offrant chacun des fonctionnalités précises, mais s'intégrant fortement avec les autres.
+Connect est construit comme une plateforme modulaire. Chaque module a un objectif précis mais s'intègre profondément aux autres.
 
 ## Diffusion
 
-Le module de diffusion de Connect est le premier à avoir été mis en place.
-D’abord conçu comme une nouvelle version reconstruite à partir de zéro de la plateforme précédente <Link to="/works/neo-traffic">Ad-Direct</Link>.
+Le module de diffusion a été la première pièce construite. Il fournit une interface unifiée de planification et de suivi des campagnes publicitaires, peu importe le système de diffusion utilisé en dessous.
 
-Le module de diffusion est conçu pour fournir une interface  de planification de campagnes d'affichage agnostique du système de diffusion effectivement utilisé pour l'infrastructure. <br />
-De cette manière, il est possible de contrôler un réseau d'écrans utilisant des systèmes de diffusion hétérogènes depuis une unique interface.
+<figure>
+  <img className="full-width-image" src={broadcast1} />
+  <figcaption>
+    Vue des planifications d'une campagne
+  </figcaption>
+</figure>
 
-Ceci est rendu possible grâce à un système d'adapteurs. Connect décrit les campagnes telles que programmées dans un format neutre, que les adapteurs reçoivent et répliquent sur leur système respectif. Pour l'instant, Connect possède des adapteurs pour BroadSign, PiSignage et Navori.
+J'ai conçu un **système d'adaptateurs** qui décrit les campagnes dans un format neutre, puis les traduit vers l'API native de chaque plateforme de diffusion. Cela permet de gérer un réseau hétérogène d'écrans et de systèmes depuis une seule interface. Connect supporte des adaptateurs pour BroadSign, PiSignage et Navori.
 
-Le suivi des performances des campagnes est lui aussi centralisé, et permet ainsi un suivi simplifié.
+Le suivi des performances est centralisé, permettant de suivre rapidement les résultats sur toutes les plateformes en même temps.
 
-Les emplacements de diffusion des campagnes sont déterminés en sélectionnant des produits, spécifiés dans l'inventaire
+<figure>
+  <img className="full-width-image" src={broadcast2} />
+  <figcaption>
+    Vue des performances d'une campagne
+  </figcaption>
+</figure>
 
 ## Inventaire
 
-L'inventaire de Neo se structure selon une notion de `propriété > produits`. Cette structure permet de limiter la duplication des informations, et d'offrir aux opérateurs et aux commerciaux une structure qui fait sens.
+L'inventaire de Neo suit une structure `propriété > produits` que j'ai conçue pour correspondre à la façon dont les équipes pensent réellement leur réseau.
 
-Au fil du temps, le nombre d'informations sur les propriétés et produits stockés dans Connect n'a cessé d'augmenter. <br />
-D'abord l'achalandage des propriétés, puis la gestion des prix, l'annuaire des centres commerciaux, les calculs d'impressions, des données démographiques, des photographies, etc.
+Au fil du temps, les données se sont considérablement enrichies: achalandage, prix, annuaire des locataires, calculs d'impressions, données démographiques, photos, et plus encore.
 
-Notre inventaire est présent sur des plateformes d'affichage programmatique. Cela requiert de s'assurer que celui-ci est bien identique sur chacune de ces ces différentes plateformes.<br />
-Connect gère cela automatiquement en synchronisant les produits mis à jour automatiquement. Aujourd'hui, Connect peut synchroniser des inventaires sur Odoo, Hivestack, BroadSign Reach, Atedra et Vistar.
+<figure>
+  <img className="full-width-image" src={inventory1} />
+  <figcaption>
+    Toutes les informations sur un produit
+  </figcaption>
+</figure>
 
-Toutes ces informations permettent d'offrir aux commerciaux un outil des ventes spécifiques à Neo.
+L'inventaire doit aussi rester synchronisé sur plusieurs plateformes publicitaires programmatiques. J'ai construit un **moteur de synchronisation** qui propage les mises à jour vers Odoo, Hivestack, BroadSign Reach, Atedra et Vistar automatiquement, en supportant les deux directions.
+
+<figure>
+  <img className="full-width-image" src={inventory2} />
+  <figcaption>
+    Encore plus d'informations sur un produit
+  </figcaption>
+</figure>
 
 ## Le Planner
 
-Le Planner est l'outil de vente de Neo. Il permet de construire des campagnes de diffusion à grande échelle, précises, et détaillées facilement et rapidement.
+Le Planner est l'outil de vente de Neo. Il permet aux commerciaux de construire des campagnes publicitaires détaillées et à grande échelle rapidement.
 
-On trouve les outils de base: sélection des produits selon leurs catégorie, province ou réseau, ajout de remises sur les prix, gestion des frais de production. Mais la véritable puissance du Planner, vient de ses filtres.
+<figure>
+  <img className="full-width-image" src={planner1} />
+  <figcaption>
+    La carte du Planner, avec les limites de la ville de Montréal et les Tim Hortons en rouge.
+  </figcaption>
+</figure>
 
-Ceux-ci permettent de raffiner la première sélection selon de nombreux critères. On en trouve une dizaine:
+Au-delà des fonctions de base (sélection de produits, remises, frais de production), la vraie puissance vient du **système de filtres** que j'ai construit:
 
-* **Points d'intérêts**: Permets de placer des POIs sur la carte, soit par adresse, soit par nom (Tim Hortons, Banques, etc.), et de limiter la sélection aux propriétés se trouvant dans un rayon choisi de ces lieues.
-* **Polygones**: permets de dessiner des zones sur la carte avec la souris.
-* **Filtres démographiques/Vividata**: Permet de filtrer les propriétés selon des index de représentation de l'achalandage. Permettant d'utiliser des informations parmi plus de 5000 variables.
-* **Délimitation**: Ce filtre utilise les données géographiques de Census Canada pour permettre de placer facilement sur la carte les délimitations géographiques de n'importe quelle ville, circonscription électorale, région de tri d'acheminement.
-* Et d'autres, permettant de filtrer les produits selon d'autres propriétés (Étiquettes, caractéristiques techniques, etc.)
+* **Points d'intérêt**: Placer des POIs sur la carte par adresse ou par nom (Tim Hortons, banques, etc.) et limiter la sélection aux produits dans un rayon choisi.
+* **Polygones**: Dessiner des formes sur la carte pour définir des zones géographiques.
+* **Filtres démographiques/Vividata**: Filtrer les propriétés avec plus de 5000 variables démographiques.
+* **Délimitations**: Données de recensement pour les villes, régions de tri d'acheminement et circonscriptions électorales.
+* Étiquettes, spécifications techniques, et plus.
 
-Tous ces filtres peuvent être groupés, et la logique les combinant peut être modifiée. Il est ainsi possible de choisir si un filtre inclut ou exclus des produits (ex.: pas de produits dans ce polygone), et si les filtres s'additionnent ou se cumulent (Un produit doit passer tous les filtres ≠ Un produit n'a besoin de passer qu'un seul des filtres.)<br />
-Les résultats des filtres apparaissent dans la vue en liste, indiquant pourquoi un produit spécifique a passé les filtres.
+Les filtres peuvent être groupés avec une logique configurable (ET/OU), et chacun peut être inversé. Les résultats expliquent exactement pourquoi un produit est inclus ou exclu.
 
-Les performances et les prix des campagnes sont recalculés automatiquement à chaque changement.
+<div className="images-row">
+  <figure>
+    <img src={planner2} />
+    <figcaption>
+      La vue en liste montrant les détails calculés pour tous les produits
+    </figcaption>
+  </figure>
+  <figure>
+    <img src={planner3} />
+    <figcaption>
+      Résultats des filtres expliquant pourquoi un produit est inclus
+    </figcaption>
+  </figure>
+</div>
 
-La rapidité et la fluidité des calculs du Planner, en font un outil utilisé non seulement par les commerciaux, mais aussi par différentes personnes chez Neo pour obtenir des informations facilement sur nos réseaux.
-
-Les plans créés dans le Planner peuvent ensuite être partagés par un lien conduisant à une interface simplifiée.
-
-Une fois un contrat conclu, les performances de ses campagnes peuvent aussi être suivies dans Connect.
+Le Planner est devenu un outil utilisé non seulement par les commerciaux, mais par beaucoup d'équipes différentes chez Neo pour obtenir des informations sur le réseau. Les campagnes peuvent être partagées en externe via un lien simplifié en lecture seule.
 
 ## Contrats
 
-Le suivi des contrats est fait tout au long des périodes de diffusion. Il est nécessaire pour s'assurer que les campagnes de diffusion fonctionnent correctement. <br />
+Le suivi des contrats permet de suivre les performances des campagnes sur tous les systèmes de diffusion dans une seule vue.
 
-La section Contrats de Connect centralise toutes les informations de performances des campagnes, qu'elles soient planifiées dans Connect ou directement dans le système de diffusion. <br />
-Il est alors possible de demander des captures d'écrans, et de générer des rapports de performances pour transmettre aux clients.
+<figure>
+  <img className="full-width-image" src={contract1} />
+  <figcaption>
+    Page d'accueil d'un contrat
+  </figcaption>
+</figure>
 
+Avant, les opérateurs devaient vérifier plusieurs interfaces de plateformes différentes. Connect centralise tout et supporte la génération automatique de captures d'écran pour les preuves de diffusion, incluant le montage des captures directement sur des photos des écrans réels.
 
-Au fil de ces années de travail sur Connect, j'ai appris en profondeur le fonctionnement des équipes de Neo, me permettant de cerner précisément les besoins, et de fournir des outils facilitant le travail de nombreuses personnes, et permettant d'acquérir de nouveaux points de vus sur nos systèmes. <br />
-Connect est aujourd'hui parfaitement intégré au processus interne de Neo.
+---
 
+Connect est passé d'un outil à un module à une plateforme qui touche chaque aspect des opérations de Neo. Le construire seul pendant quatre ans m'a donné une expérience profonde dans la conception de systèmes qui évoluent avec les besoins d'une entreprise, et la satisfaction de savoir que ça a fait une vraie différence dans le quotidien des gens.
