@@ -64,7 +64,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "postbuild": "react-snap",
+    "postbuild": "react-snap || echo 'react-snap skipped (no headless Chrome available)'",
     "test": "node scripts/test.js",
     "extract:messages": "react-intl-cra 'src/**/*.{js,jsx}' -o './messages/messages.json' && node ./translationRunner.js"
   },
