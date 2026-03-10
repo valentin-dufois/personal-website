@@ -33,7 +33,6 @@
     "jest-watch-typeahead": "^1.0.0",
     "js-cookie": "^3",
     "mini-css-extract-plugin": "^2.4.5",
-    "sass": "^1.64.2",
     "postcss": "^8.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-loader": "^6.2.1",
@@ -50,6 +49,7 @@
     "react-router-dom": "^6.14.2",
     "resolve": "^1.20.0",
     "resolve-url-loader": "^4.0.0",
+    "sass": "^1.64.2",
     "sass-loader": "^12.3.0",
     "semver": "^7.3.5",
     "source-map-loader": "^3.0.0",
@@ -64,6 +64,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "postbuild": "react-snap",
     "test": "node scripts/test.js",
     "extract:messages": "react-intl-cra 'src/**/*.{js,jsx}' -o './messages/messages.json' && node ./translationRunner.js"
   },
@@ -131,9 +132,25 @@
     ],
     "resetMocks": true
   },
+  "reactSnap": {
+    "include": [
+      "/",
+      "/what-i-do",
+      "/what-i-do/neo-connect",
+      "/what-i-do/dvin",
+      "/what-i-do/autotrader",
+      "/what-i-do/neo-traffic",
+      "/what-i-do/prisme",
+      "/what-i-do/runner",
+      "/what-i-do/td-library"
+    ]
+  },
   "babel": {
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "react-snap": "^1.23.0"
   }
 }
