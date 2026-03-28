@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1f2229">
+    <meta name="description" content="{{ metaDescription or 'Valentin Dufois - Senior Software Engineer based in Montreal. Senior Developer / Tech Lead open to new opportunities.' }}">
+    <meta property="og:title" content="{{ metaTitle or 'Valentin Dufois - Senior Software Engineer' }}">
+    <meta property="og:description" content="{{ metaDescription or 'Senior Developer / Tech Lead based in Montreal. Open to new opportunities.' }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://valentin.dufois.fr{{ page.url }}">
+    <link rel="alternate" hreflang="{{ altLocale }}" href="https://valentin.dufois.fr{{ altUrl }}">
+    <link rel="alternate" hreflang="{{ locale }}" href="https://valentin.dufois.fr{{ page.url }}">
+    <title>{{ metaTitle or 'Valentin Dufois - Senior Software Engineer' }}</title>
+    <link rel="stylesheet" href="/style/main.css">
+  </head>
+  <body>
+    <section id="root">
+      <header>
+        <a href="{{ baseUrl }}/" class="title">val</a>
+        <div id="language-switcher">
+          <a href="{{ altUrl }}">{{ t[locale].switchLocale }}</a>
+        </div>
+      </header>
+      <menu>
+        <a href="{{ baseUrl }}/"{% if page.url == '/' or page.url == '/fr/' %} class="active"{% endif %}>{{ t[locale].whoAmI }}</a>
+        <a href="{{ baseUrl }}/what-i-do/"{% if '/what-i-do' in page.url %} class="active"{% endif %}>{{ t[locale].whatIDo }}</a>
+      </menu>
+      {{ content | safe }}
+      <footer>
+        <div class="social-links">
+          <a href="https://github.com/valentin-dufois" target="_blank" rel="noopener noreferrer">
+            <span class="w">gh</span>::<span class="w">valentin-dufois</span>
+          </a>
+          <a href="https://www.linkedin.com/in/valentindufois/" target="_blank" rel="noopener noreferrer">
+            <span class="w">in</span>::<span class="w">valentindufois</span>
+          </a>
+        </div>
+        <a href="mailto:valentin@dufois.fr" class="contact-me-plz">
+          <span class="w">valentin</span>::at::<span class="w">dufois</span>::dot::<span class="w">fr</span>
+        </a>
+      </footer>
+    </section>
+    <script src="/js/scramble.js" defer></script>
+  </body>
+</html>

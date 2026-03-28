@@ -1,0 +1,12 @@
+---
+layout: base.njk
+---
+<main>
+  <h1>
+    {{ projectTitle }}
+    <a href="{{ baseUrl }}/what-i-do/" class="back-arrow">
+      &#10232;<span>{{ t[locale].back }}</span>
+    </a>
+  </h1>
+  {{ content | safe }}
+</main>

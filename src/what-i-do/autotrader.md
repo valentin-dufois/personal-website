@@ -1,0 +1,36 @@
+---
+layout: project.njk
+projectTitle: "AutoTrader"
+metaTitle: "AutoTrader - Valentin Dufois"
+metaDescription: "AutoTrader: a personal algorithmic trading platform built on Interactive Brokers."
+---
+
+AutoTrader is a personal project: a full algorithmic trading platform built on top of Interactive Brokers. It started as a way to automate some trading ideas and evolved into a serious, production-grade system.
+
+## Architecture
+
+The platform runs as a **13-service microservices architecture** orchestrated with Docker Compose:
+
+- **Laravel** handles the core business logic, API, job queues, and WebSocket events
+- **FastAPI (Python)** serves as a thin adapter to the Interactive Brokers API
+- **A second FastAPI service** runs Bayesian optimization for algorithm parameter tuning via Optuna
+- **React 19 + TypeScript** powers the monitoring dashboard
+- **PostgreSQL** and **Redis** handle persistence and real-time event distribution
+
+## Trading algorithms
+
+The system supports a pluggable algorithm framework. Algorithms are auto-discovered via PHP 8 attributes, and each one defines its own parameter schema. There are currently **11+ algorithms** implemented, ranging from simple buy-and-hold to spectral cycle analysis (FFT), LSTM signal trading, and regime-adaptive strategies.
+
+## Backtesting and optimization
+
+The backtesting engine replays historical data bar-by-bar with realistic fill simulation, slippage, and commission modeling. Results are tracked with snapshots and displayed in the dashboard.
+
+For parameter optimization, the platform uses **Bayesian optimization via Optuna**, allowing algorithms to be tuned across large parameter spaces without brute-force grid search.
+
+## The dashboard
+
+The React frontend provides real-time monitoring of positions, orders, and P&L through WebSocket connections. It also exposes the full algorithm library, backtest history, scan results, and optimization runs.
+
+---
+
+This project is where I push my technical boundaries. It touches distributed systems, real-time data processing, ML-adjacent optimization, financial modeling, and full-stack development all at once. It runs in paper trading mode by default, with live trading infrastructure ready to go.
