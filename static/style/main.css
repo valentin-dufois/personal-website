@@ -285,7 +285,7 @@ main h2:before {
 }
 
 main .open-to-work {
-  margin: 30px 0;
+  margin: 30px 0 15px 0;
   padding: 12px 20px;
   border-left: 3px solid var(--foreground-color);
   color: var(--foreground-color);

@@ -4,8 +4,8 @@
  */
 (function () {
   var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,.<>?';
-  var duration = 1500;
-  var delay = 200;
+  var duration = 800;
+  var delay = 150;
 
   function scramble(el) {
     var target = el.getAttribute('data-scramble');
