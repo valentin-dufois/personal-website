@@ -532,6 +532,7 @@ main ul li .wtf-comment.wtf-5 {
 .images-row figure {
   margin-left: .5em;
   margin-right: .5em;
+  flex: 1;
 }
 
 .images-row figure img {
