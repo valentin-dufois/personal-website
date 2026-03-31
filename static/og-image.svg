@@ -1,0 +1,10 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#1f2229"/>
+  <text x="100" y="260" font-family="monospace" font-size="72" font-weight="bold" fill="#e0e0e0">Valentin Dufois</text>
+  <text x="100" y="340" font-family="monospace" font-size="36" fill="#888">Senior Software Engineer</text>
+  <line x1="100" y1="380" x2="400" y2="380" stroke="#555" stroke-width="2"/>
+  <text x="100" y="430" font-family="monospace" font-size="24" fill="#666">Full-stack development</text>
+  <text x="100" y="465" font-family="monospace" font-size="24" fill="#666">Language design &amp; compilers</text>
+  <text x="100" y="500" font-family="monospace" font-size="24" fill="#666">Distributed systems</text>
+  <text x="1100" y="590" font-family="monospace" font-size="20" fill="#444" text-anchor="end">valentindufois.fr</text>
+</svg>

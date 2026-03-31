@@ -10,7 +10,7 @@ I discovered TouchDesigner at the beginning of my mastery in digital creation. I
 The idea of a collection of reusable TouchDesigner components came from a comparison between the young TouchDesigner community and the more mature communities of popular programming languages. The absence of a hub where all the community content could be found struck us the most. All components shared by users are scattered across the web on different websites, often hard to find. The goal of this library is to offer a unique place where to find reusable content for TouchDesigner, with consistency between the elements.
 
 <figure>
-  <img src="/works/td-library/tap.tempo.png" class="full-width-image">
+  <img loading="lazy" src="/works/td-library/tap.tempo.png" class="full-width-image" alt="TouchDesigner Tap Tempo component">
   <figcaption>The Tap Tempo CHOP adjust the project tempo using a user-provided input, such as a MIDI controller.</figcaption>
 </figure>
 
@@ -23,7 +23,7 @@ The first version of the library is still under construction. We want it to offe
 All these conditions allow us to build exclusively components working for the betterment of the software. Our ideas come from our own experience with TouchDesigner as well as inputs from our relatives using it.
 
 <figure>
-  <img src="/works/td-library/json.to.table.png" class="full-width-image">
+  <img loading="lazy" src="/works/td-library/json.to.table.png" class="full-width-image" alt="TouchDesigner JSON to Table component">
   <figcaption>The JSON to Table DAT takes a JSON input and returns is content as a DAT Table that can be handled easily by TouchDesigner.</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ With this library we aim to bring tools easing the work of users, and allowing t
 The library offers components in TOX files, as well as examples in TOE files. The goal of these examples is to complete the OP Snippets by providing simple and explicit example of advanced techniques in TouchDesigner, but that does not justify the need for a specific component. Finally, the library features multiple custom operators made in C++ for macOS and Windows. These operators bring new functionalities to TouchDesigner or offer alternatives to existing one we deemed challenging to use.
 
 <figure>
-  <img src="/works/td-library/midi.chop.png" class="full-width-image">
+  <img loading="lazy" src="/works/td-library/midi.chop.png" class="full-width-image" alt="TouchDesigner MIDI In/Out component">
   <figcaption>The MIDI In and MIDI Out CHOP are used instead of the native ones. They allow for bypassing the cryptic MIDI Device Mapper window.</figcaption>
 </figure>
 

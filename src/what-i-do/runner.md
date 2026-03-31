@@ -8,7 +8,7 @@ metaDescription: "Runner: a fast fuzzy finder for TouchDesigner."
 The Runner is a quick search tool for TouchDesigner, allowing you to add nodes, search TOXs in the palette and much more, entirely with your keyboard.
 
 <figure>
-  <img class="full-width-image" src="/works/runner/this-is-runner-small.gif">
+  <img class="full-width-image" loading="lazy" src="/works/runner/this-is-runner-small.gif" alt="Runner fuzzy finder in action">
   <figcaption>The Runner</figcaption>
 </figure>
 
@@ -22,6 +22,6 @@ The <a href="https://github.com/valentin-dufois/Runner" target="_blank">Runner</
 * Predefined parameters;
 
 <figure>
-  <img class="full-width-image" src="/works/runner/runner.noise.png">
+  <img class="full-width-image" loading="lazy" src="/works/runner/runner.noise.png" alt="Runner search example">
   <figcaption>Search example</figcaption>
 </figure>

@@ -18,7 +18,7 @@ Connect est construit comme une plateforme modulaire. Chaque module a un objecti
 Le module de diffusion a été la première pièce construite. Il fournit une interface unifiée de planification et de suivi des campagnes publicitaires, peu importe le système de diffusion utilisé en dessous.
 
 <figure>
-  <img class="full-width-image" src="/works/connect/connect.broadcast.png">
+  <img class="full-width-image" loading="lazy" src="/works/connect/connect.broadcast.png" alt="Connect - planification de campagne">
   <figcaption>Vue des planifications d'une campagne</figcaption>
 </figure>
 
@@ -27,7 +27,7 @@ J'ai conçu un **système d'adaptateurs** qui décrit les campagnes dans un form
 Le suivi des performances est centralisé, permettant de suivre rapidement les résultats sur toutes les plateformes en même temps.
 
 <figure>
-  <img class="full-width-image" src="/works/connect/connect.broadcast-2.png">
+  <img class="full-width-image" loading="lazy" src="/works/connect/connect.broadcast-2.png" alt="Connect - performances de campagne">
   <figcaption>Vue des performances d'une campagne</figcaption>
 </figure>
 
@@ -38,14 +38,14 @@ L'inventaire de Neo suit une structure `propriété > produits` que j'ai conçue
 Au fil du temps, les données se sont considérablement enrichies: achalandage, prix, annuaire des locataires, calculs d'impressions, données démographiques, photos, et plus encore.
 
 <figure>
-  <img class="full-width-image" src="/works/connect/connect.inventory.png">
+  <img class="full-width-image" loading="lazy" src="/works/connect/connect.inventory.png" alt="Connect - détails d'inventaire produit">
   <figcaption>Toutes les informations sur un produit</figcaption>
 </figure>
 
 L'inventaire doit aussi rester synchronisé sur plusieurs plateformes publicitaires programmatiques. J'ai construit un **moteur de synchronisation** qui propage les mises à jour vers Odoo, Hivestack, BroadSign Reach, Atedra et Vistar automatiquement, en supportant les deux directions.
 
 <figure>
-  <img class="full-width-image" src="/works/connect/connect.inventory-2.png">
+  <img class="full-width-image" loading="lazy" src="/works/connect/connect.inventory-2.png" alt="Connect - informations produit étendues">
   <figcaption>Encore plus d'informations sur un produit</figcaption>
 </figure>
 
@@ -54,7 +54,7 @@ L'inventaire doit aussi rester synchronisé sur plusieurs plateformes publicitai
 Le Planner est l'outil de vente de Neo. Il permet aux commerciaux de construire des campagnes publicitaires détaillées et à grande échelle rapidement.
 
 <figure>
-  <img class="full-width-image" src="/works/connect/connect.planner-1.png">
+  <img class="full-width-image" loading="lazy" src="/works/connect/connect.planner-1.png" alt="Connect - vue carte du planner">
   <figcaption>La carte du Planner, avec les limites de la ville de Montréal et les Tim Hortons en rouge.</figcaption>
 </figure>
 
@@ -70,11 +70,11 @@ Les filtres peuvent être groupés avec une logique configurable (ET/OU), et cha
 
 <div class="images-row">
   <figure>
-    <img src="/works/connect/connect.planner-2.png">
+    <img loading="lazy" src="/works/connect/connect.planner-2.png" alt="Connect - vue liste du planner">
     <figcaption>La vue en liste montrant les détails calculés pour tous les produits</figcaption>
   </figure>
   <figure>
-    <img src="/works/connect/connect.planner-3.png">
+    <img loading="lazy" src="/works/connect/connect.planner-3.png" alt="Connect - résultats des filtres du planner">
     <figcaption>Résultats des filtres expliquant pourquoi un produit est inclus</figcaption>
   </figure>
 </div>
@@ -86,7 +86,7 @@ Le Planner est devenu un outil utilisé non seulement par les commerciaux, mais 
 Le suivi des contrats permet de suivre les performances des campagnes sur tous les systèmes de diffusion dans une seule vue.
 
 <figure>
-  <img class="full-width-image" src="/works/connect/connect.contracts.png">
+  <img class="full-width-image" loading="lazy" src="/works/connect/connect.contracts.png" alt="Connect - suivi des contrats">
   <figcaption>Page d'accueil d'un contrat</figcaption>
 </figure>
 

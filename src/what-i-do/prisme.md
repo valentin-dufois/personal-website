@@ -14,16 +14,16 @@ First, Plexiglass plates are suspended in the air, on which animations appear. T
 
 <div class="images-row">
   <figure>
-    <img src="/works/prisme/dialog.2.jpg">
+    <img loading="lazy" src="/works/prisme/dialog.2.jpg" alt="Interactor using a phone handset">
     <figcaption>An interactor using a phone</figcaption>
   </figure>
   <figure>
-    <img src="/works/prisme/dialog.3.JPG">
+    <img loading="lazy" src="/works/prisme/dialog.3.JPG" alt="Interactor seen through projected animations">
     <figcaption>An interactor seen through the animations</figcaption>
   </figure>
 </div>
 <figure>
-  <img class="full-width-image" src="/works/prisme/dialog.1.jpg">
+  <img class="full-width-image" loading="lazy" src="/works/prisme/dialog.1.jpg" alt="Dialog installation being set up">
   <figcaption>Dialog being installed</figcaption>
 </figure>
 
@@ -37,7 +37,7 @@ We were able to exhibit Dialog twice. First in December 2018 at the University o
 Following Dialog, our desire was no longer simply to show a machine that analyzes, we wanted to explore the idea of a machine that learns. Thus was born Embryo, our second installation. Embryo positions itself as an entity observing the people around it, and using information it collects to sort through the videos shown on its faces. These videos move along its sides until they are correctly ordered.
 
 <figure>
-  <img class="full-width-image" src="/works/prisme/embryo.1.jpg">
+  <img class="full-width-image" loading="lazy" src="/works/prisme/embryo.1.jpg" alt="Embryo installation">
   <figcaption>Embryo</figcaption>
 </figure>
 
@@ -45,11 +45,11 @@ In order to follow the movements of the interactors in the room, Embryo uses eig
 
 <div class="images-row">
   <figure>
-    <img src="/works/prisme/embryo.2.png">
+    <img loading="lazy" src="/works/prisme/embryo.2.png" alt="Embryo Kinect and projector layout diagram">
     <figcaption>Diagram showing the eight Kinects, the four projectors, and the computer generating the visuals.</figcaption>
   </figure>
   <figure>
-    <img src="/works/prisme/embryo.3.png">
+    <img loading="lazy" src="/works/prisme/embryo.3.png" alt="Embryo video stream projection diagram">
     <figcaption>Diagram showing the four video streams illuminating the four sides of Embryo.</figcaption>
   </figure>
 </div>
@@ -61,16 +61,16 @@ We presented Embryo at UQAT in March 2019, then at Hexagram in Montreal in May o
 In line with Embryo, where a machine analyzes its environment, we wanted to deepen this concept, but in a more explicit form. Our wish is to explore the impact of the subjectivity of the interactors on themselves. Servo presents two rectangular structures, representing machines, discussing what is going on around them. These machines question the actions of the interactors and try to interact with them. Their reactions, or not, feed the conversation of these two entities. In addition to presenting its part of the conversation, each machine also presents an abstract representation of its state of thought through an animation placed on the opposite side to the one presenting the text.
 
 <figure>
-  <img class="full-width-image" src="/works/prisme/servo.2.JPG">
+  <img class="full-width-image" loading="lazy" src="/works/prisme/servo.2.JPG" alt="Servo machine conversation excerpts">
   <figcaption>Excerpts from a conversation between the machine.</figcaption>
 </figure>
 <div class="images-row">
   <figure>
-    <img src="/works/prisme/servo.1.JPG">
+    <img loading="lazy" src="/works/prisme/servo.1.JPG" alt="Child interacting with Servo machine">
     <figcaption>A kid interacts and plays with one of the machines.</figcaption>
   </figure>
   <figure>
-    <img src="/works/prisme/servo.3.JPG">
+    <img loading="lazy" src="/works/prisme/servo.3.JPG" alt="Servo structure with technical components">
     <figcaption>Each structure holds all the technical elements needed for it to work.</figcaption>
   </figure>
 </div>

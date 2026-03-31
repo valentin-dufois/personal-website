@@ -12,14 +12,14 @@ Neo-Traffic est un diffuseur de contenu publicitaire statique et dynamique prés
 En 2016, Neo-Traffic a décidé de faire une refonte complète de son site web, jusqu'alors implémentée en Java. Cette refonte a eu pour but d'apporter une meilleure facilité d'utilisation du site et une présentation exhaustive des produits et marchés de Neo-Traffic. Un autre aspect de cette refonte était de permettre aux collaborateurs de mettre à jour les informations sans avoir besoin de faire appel à un développeur.
 
 <figure>
-  <img class="full-width-image" src="/works/neo-traffic/neo.web.home.png">
+  <img class="full-width-image" loading="lazy" src="/works/neo-traffic/neo.web.home.png" alt="Neo-Traffic website homepage">
   <figcaption>Page d'accueil du site <a href="https://neo-traffic.com">neo-traffic.com</a>.</figcaption>
 </figure>
 
 Afin de répondre aux besoins de Neo-Traffic, j'ai utilisé le CMS Bolt comme base pour le site. Bolt permet de définir clairement le type de contenu de chaque type de page, et propose une interface adaptée aux utilisateurs souhaitant insérer du contenu. De cette manière, les collaborateurs responsables du maintien du site sont aujourd'hui entièrement autonomes dans la gestion des informations présentées.
 
 <figure>
-  <img class="full-width-image" src="/works/neo-traffic/neo.web.markets.png">
+  <img class="full-width-image" loading="lazy" src="/works/neo-traffic/neo.web.markets.png" alt="Neo-Traffic interactive markets map">
   <figcaption>Une carte interactive permet de découvrir facilement tous les marchés où est présent le réseau de Neo-Traffic.</figcaption>
 </figure>
 
@@ -27,11 +27,11 @@ Dans le but de fournir à leurs clients et potentiels clients des informations p
 
 <div class="images-row">
   <figure>
-    <img src="/works/neo-traffic/neo.web.mall-sheet.png">
+    <img loading="lazy" src="/works/neo-traffic/neo.web.mall-sheet.png" alt="Neo-Traffic auto-generated mall PDF">
     <figcaption>Fiche PDF générée automatiquement à la demande, présentant succinctement un centre commercial.</figcaption>
   </figure>
   <figure>
-    <img src="/works/neo-traffic/neo.web.products-list.png">
+    <img loading="lazy" src="/works/neo-traffic/neo.web.products-list.png" alt="Neo-Traffic products list document">
     <figcaption>Ce document présente les détails d'implantation de Neo-Traffic dans chaque centre commercial.</figcaption>
   </figure>
 </div>
@@ -44,11 +44,11 @@ En 2016, l'intégralité de la planification des contenus publicitaires sur le r
 
 <div class="images-row">
   <figure>
-    <img src="/works/neo-traffic/neo.addirect.campaign.png">
+    <img loading="lazy" src="/works/neo-traffic/neo.addirect.campaign.png" alt="Ad-Direct campaign view">
     <figcaption>Une campagne sur Ad-Direct.</figcaption>
   </figure>
   <figure>
-    <img src="/works/neo-traffic/neo.addirect.campaign2.png">
+    <img loading="lazy" src="/works/neo-traffic/neo.addirect.campaign2.png" alt="Ad-Direct creative ready for broadcast">
     <figcaption>Une affiche prête pour la diffusion dans une campagne.</figcaption>
   </figure>
 </div>
@@ -57,11 +57,11 @@ Ad-Direct est une plateforme de gestion de campagne publicitaire et de diffusion
 
 <div class="images-row">
   <figure>
-    <img src="/works/neo-traffic/neo.addirect.supports.png">
+    <img loading="lazy" src="/works/neo-traffic/neo.addirect.supports.png" alt="Ad-Direct display format support">
     <figcaption>Ad-Direct supporte tout type de format d'affichage qu'il est possible de personnaliser selon les besoins.</figcaption>
   </figure>
   <figure>
-    <img src="/works/neo-traffic/neo.addirect.params.png">
+    <img loading="lazy" src="/works/neo-traffic/neo.addirect.params.png" alt="Ad-Direct configuration options">
     <figcaption>Ad-Direct offre de nombreuses options de personnalisation et de paramétrage pour les équipes de Neo-Traffic.</figcaption>
   </figure>
 </div>
@@ -77,11 +77,11 @@ En plus du contenu publicitaire, Neo-Traffic utilise son réseau d'écrans pour 
 
 <div class="images-row">
   <figure>
-    <img src="/works/neo-traffic/neo.dynamics.weather-url.png">
+    <img loading="lazy" src="/works/neo-traffic/neo.dynamics.weather-url.png" alt="Dynamics dashboard URL generator">
     <figcaption>Le tableau de bord des Dynamics permet aux équipes de Neo-Traffic de générer des URL de diffusion très simplement.</figcaption>
   </figure>
   <figure>
-    <img src="/works/neo-traffic/neo.dynamics.news-backgrounds.png">
+    <img loading="lazy" src="/works/neo-traffic/neo.dynamics.news-backgrounds.png" alt="Dynamics background customization">
     <figcaption>Il est possible de modifier les arrière-plans des Dynamics en quelques clics seulement.</figcaption>
   </figure>
 </div>
@@ -89,14 +89,14 @@ En plus du contenu publicitaire, Neo-Traffic utilise son réseau d'écrans pour 
 Le tableau de bord et les Dynamics fonctionnent avec le framework React.JS et se basent sur une API en Laravel pour la récupération des données. Un pipeline de déploiement basé sur des hooks Git permet de publier une mise à jour en quelques secondes, sans aucune perturbation dans la diffusion.
 
 <figure>
-  <img class="full-width-image" src="/works/neo-traffic/neo.weather.fcl.png">
+  <img class="full-width-image" loading="lazy" src="/works/neo-traffic/neo.weather.fcl.png" alt="Weather dynamic on food court screens">
   <figcaption>Le Weather Dynamic tel qu'il apparaît sur les écrans doubles.</figcaption>
 </figure>
 
 Le Weather Dynamic propose un affichage de la météo locale, des prévisions à trois ou cinq jours, et de la météo nationale, en français et en anglais. Le tableau de bord permet de contrôler les arrières plans affichés par le dynamique, et même de spécifier des arrière-plans propres à certaines provinces et villes. Les collaborateurs en charge des Dynamics sont libres de les modifier comme bon leur semble.
 
 <figure>
-  <img class="full-width-image" src="/works/neo-traffic/neo.news.shd.png">
+  <img class="full-width-image" loading="lazy" src="/works/neo-traffic/neo.news.shd.png" alt="News dynamic on single screen">
   <figcaption>Le News Dynamic dans sa disposition pour un seul écran.</figcaption>
 </figure>
 

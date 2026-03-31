@@ -10,7 +10,7 @@ J'ai découvert le logiciel TouchDesigner dès le début de ma maîtrise en cré
 L'idée d'un catalogue de composants réutilisables pour TouchDesigner nous est venue d'un parallèle entre la communauté encore jeune de TouchDesigner et les communautés plus matures de différents langages de programmation populaires. L'absence de centralisation du contenu communautaire est un détail qui nous a marqués. Les composants construits et partagés par la communauté sont éparpillés sur de nombreux sites différents, et sont parfois difficiles à dénicher. Le but de ce catalogue est donc de fournir un point central où trouver du contenu réutilisable pour TouchDesigner, et d'apporter une certaine uniformité entre les éléments proposés.
 
 <figure>
-  <img src="/works/td-library/tap.tempo.png" class="full-width-image">
+  <img loading="lazy" src="/works/td-library/tap.tempo.png" class="full-width-image" alt="TouchDesigner Tap Tempo component">
   <figcaption>Le CHOP Tap Tempo permet à l'utilisateur d'ajuster le tempo du projet avec un bouton, tel qu'un contrôleur MIDI par exemple.</figcaption>
 </figure>
 
@@ -23,7 +23,7 @@ La première itération de la bibliothèque est encore en cours de mise en place
 Ces différentes conditions nous permettent de ne construire que des composants venant ajouter une réelle plus-value au logiciel. Les idées pour développer nos composants proviennent de nos expériences personnelles avec le logiciel, et des recommandations et commentaires faits par nos proches aussi utilisateurs de TouchDesigner.
 
 <figure>
-  <img src="/works/td-library/json.to.table.png" class="full-width-image">
+  <img loading="lazy" src="/works/td-library/json.to.table.png" class="full-width-image" alt="TouchDesigner JSON to Table component">
   <figcaption>Le DAT JSON to Table permet de transformer du JSON en un tableau manipulable facilement au sein de TouchDesigner.</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ Avec cette bibliothèque de composants, notre souhait est d'apporter des outils 
 Si la plupart des composants proposés prennent la forme de fichiers TOX, plusieurs fichiers de projet TOE vont aussi intégrer la bibliothèque. Agissant comme des compléments aux OP Snippets, le but de ces projets est de fournir des exemples simples et concrets d'utilisation de certaines fonctionnalités avancées de TouchDesigner, mais qui ne justifie pas le développement de composants. Enfin, notre bibliothèque intègre aussi plusieurs opérateurs personnalisés développés en C++ pour macOS et Windows. Ces composants apportent des fonctionnalités supplémentaires à TouchDesigner ou viennent proposer une alternative à certains éléments que nous jugeons difficiles d'utilisation.
 
 <figure>
-  <img src="/works/td-library/midi.chop.png" class="full-width-image">
+  <img loading="lazy" src="/works/td-library/midi.chop.png" class="full-width-image" alt="TouchDesigner MIDI In/Out component">
   <figcaption>Les CHOP MIDI In et MIDI Out s'utilisent en lieu et place des Midi In et Out natifs de TouchDesigner. Ils permettent de s'affranchir complètement de la fenêtre MIDI Device Mapper, parfois cryptique.</figcaption>
 </figure>
 

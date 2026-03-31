@@ -14,16 +14,16 @@ D'abord, des plaques de plexiglas suspendues dans les airs, sur lesquels apparai
 
 <div class="images-row">
   <figure>
-    <img src="/works/prisme/dialog.2.jpg">
+    <img loading="lazy" src="/works/prisme/dialog.2.jpg" alt="Interactor using a phone handset">
     <figcaption>Un interacteur utilisant un combiné</figcaption>
   </figure>
   <figure>
-    <img src="/works/prisme/dialog.3.JPG">
+    <img loading="lazy" src="/works/prisme/dialog.3.JPG" alt="Interactor seen through projected animations">
     <figcaption>Une interactrice vue au travers des animations</figcaption>
   </figure>
 </div>
 <figure>
-  <img class="full-width-image" src="/works/prisme/dialog.1.jpg">
+  <img class="full-width-image" loading="lazy" src="/works/prisme/dialog.1.jpg" alt="Dialog installation being set up">
   <figcaption>L'oeuvre en cours d'installation</figcaption>
 </figure>
 
@@ -37,7 +37,7 @@ Nous avons pus exposer Dialog à deux reprises. D'abord en décembre 2018 à l'U
 À la suite de Dialog, notre souhait n'était plus simplement de montrer une machine qui analyse, nous voulions explorer l'idée d'une machine qui apprend. Ainsi est né Embryo, notre seconde installation. Embryo se place comme une entité observant les personnes autour d'elle, et utilisant les informations qu'elle récolte pour effectuer un tri des éléments qu'elle possède. Ces éléments, des vidéos, se déplacent le long de ses faces jusqu'à ce qu'elles soient correctement ordonnées.
 
 <figure>
-  <img class="full-width-image" src="/works/prisme/embryo.1.jpg">
+  <img class="full-width-image" loading="lazy" src="/works/prisme/embryo.1.jpg" alt="Embryo installation">
   <figcaption>Embryo</figcaption>
 </figure>
 
@@ -45,11 +45,11 @@ Afin de suivre les mouvements des interacteurs présents dans la salle, Embryo u
 
 <div class="images-row">
   <figure>
-    <img src="/works/prisme/embryo.2.png">
+    <img loading="lazy" src="/works/prisme/embryo.2.png" alt="Embryo Kinect and projector layout diagram">
     <figcaption>Schéma présentant les huit Kinects, les quatre projecteurs, et l'ordinateur générant les visuels.</figcaption>
   </figure>
   <figure>
-    <img src="/works/prisme/embryo.3.png">
+    <img loading="lazy" src="/works/prisme/embryo.3.png" alt="Embryo video stream projection diagram">
     <figcaption>Schéma présentant les quatre flux vidéo illuminant les quatre faces d'Embryo.</figcaption>
   </figure>
 </div>
@@ -61,16 +61,16 @@ Nous avons présenté Embryo à l'UQAT en mars 2019, puis à Hexagram à Montré
 Dans la lignée d'Embryo, ou une machine analyse son environnement, nous avons voulu approfondir ce concept, mais sous une forme plus explicite. Notre souhait est d'explorer l'impact de la subjectivité des interacteurs sur eux-mêmes au travers d'une œuvre machinique. Servo présente deux structures rectangulaires, représentant des machines, discutant de ce qu'il se passe autour d'elles. Ces machines questionnent les actions des interacteurs et essaient d'interagir avec eux. Leurs réactions, ou non, viennent alimenter la conversation de ces deux entités. En plus de présenter sa partie de la conversation, chaque machine présente aussi une représentation abstraite de son état de pensée au travers d'une animation se plaçant sur la face opposée à celle présentant le texte.
 
 <figure>
-  <img class="full-width-image" src="/works/prisme/servo.2.JPG">
+  <img class="full-width-image" loading="lazy" src="/works/prisme/servo.2.JPG" alt="Servo machine conversation excerpts">
   <figcaption>Extrait d'une conversation entre les machines.</figcaption>
 </figure>
 <div class="images-row">
   <figure>
-    <img src="/works/prisme/servo.1.JPG">
+    <img loading="lazy" src="/works/prisme/servo.1.JPG" alt="Child interacting with Servo machine">
     <figcaption>Une enfant interagit avec une des machines.</figcaption>
   </figure>
   <figure>
-    <img src="/works/prisme/servo.3.JPG">
+    <img loading="lazy" src="/works/prisme/servo.3.JPG" alt="Servo structure with technical components">
     <figcaption>Chaque structure contient tous les éléments techniques nécéssaires à son fonctionnement.</figcaption>
   </figure>
 </div>

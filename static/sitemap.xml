@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://valentindufois.fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/what-i-do/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/what-i-do/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/what-i-do/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/fr/what-i-do/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/what-i-do/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/what-i-do/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/what-i-do/neo-connect/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/what-i-do/neo-connect/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/what-i-do/neo-connect/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/fr/what-i-do/neo-connect/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/what-i-do/neo-connect/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/what-i-do/neo-connect/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/what-i-do/autotrader/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/what-i-do/autotrader/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/what-i-do/autotrader/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/fr/what-i-do/autotrader/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/what-i-do/autotrader/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/what-i-do/autotrader/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/what-i-do/dvin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/what-i-do/dvin/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/what-i-do/dvin/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/fr/what-i-do/dvin/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/what-i-do/dvin/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/what-i-do/dvin/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/what-i-do/neo-traffic/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/what-i-do/neo-traffic/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/what-i-do/neo-traffic/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/fr/what-i-do/neo-traffic/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/what-i-do/neo-traffic/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/what-i-do/neo-traffic/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/what-i-do/prisme/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/what-i-do/prisme/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/what-i-do/prisme/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/fr/what-i-do/prisme/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/what-i-do/prisme/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/what-i-do/prisme/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/what-i-do/runner/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/what-i-do/runner/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/what-i-do/runner/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/fr/what-i-do/runner/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/what-i-do/runner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/what-i-do/runner/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/what-i-do/td-library/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/what-i-do/td-library/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/what-i-do/td-library/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://valentindufois.fr/fr/what-i-do/td-library/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://valentindufois.fr/fr/what-i-do/td-library/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valentindufois.fr/what-i-do/td-library/"/>
+    <priority>0.7</priority>
+  </url>
+</urlset>

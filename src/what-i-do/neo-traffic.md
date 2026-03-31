@@ -12,14 +12,14 @@ Neo-Traffic is an advertising network for both static and dynamic content coveri
 In 2016, Neo-Traffic needed a complete redesign of their website. This complete rewriting goal was to bring a better interface and an exhaustive list of products and markets of Neo-Traffic. Another aspect of this redesign was to allow employees to update information without the need for a developer.
 
 <figure>
-  <img class="full-width-image" src="/works/neo-traffic/neo.web.home.png">
+  <img class="full-width-image" loading="lazy" src="/works/neo-traffic/neo.web.home.png" alt="Neo-Traffic website homepage">
   <figcaption>Homepage of the website <a href="https://neo-traffic.com">neo-traffic.com</a></figcaption>
 </figure>
 
 In order to answer Neo-Traffic needs, I used Bolt CMS as a framework for the website. Bolt allowed me to define explicitly the different information and elements needed for each type of page on the website, and built an interface according to these specifications targeted for employees only wanting to insert information. This way, collaborators in charge of maintaining information up to date are able to work in complete autonomy.
 
 <figure>
-  <img class="full-width-image" src="/works/neo-traffic/neo.web.markets.png">
+  <img class="full-width-image" loading="lazy" src="/works/neo-traffic/neo.web.markets.png" alt="Neo-Traffic interactive markets map">
   <figcaption>An interactive map allows for easy exploration of Neo-Traffic markets.</figcaption>
 </figure>
 
@@ -27,11 +27,11 @@ In order to offer to clients and potential clients precise information about the
 
 <div class="images-row">
   <figure>
-    <img src="/works/neo-traffic/neo.web.mall-sheet.png">
+    <img loading="lazy" src="/works/neo-traffic/neo.web.mall-sheet.png" alt="Neo-Traffic auto-generated mall PDF">
     <figcaption>Automatically generated PDF document showcasing a short description of a mall.</figcaption>
   </figure>
   <figure>
-    <img src="/works/neo-traffic/neo.web.products-list.png">
+    <img loading="lazy" src="/works/neo-traffic/neo.web.products-list.png" alt="Neo-Traffic products list document">
     <figcaption>This document presents the technical implantation of Neo-Traffic in every mall.</figcaption>
   </figure>
 </div>
@@ -44,11 +44,11 @@ In 2016, scheduling content on the Neo-Traffic network was a manual operation th
 
 <div class="images-row">
   <figure>
-    <img src="/works/neo-traffic/neo.addirect.campaign.png">
+    <img loading="lazy" src="/works/neo-traffic/neo.addirect.campaign.png" alt="Ad-Direct campaign view">
     <figcaption>A campaign on Ad-Direct.</figcaption>
   </figure>
   <figure>
-    <img src="/works/neo-traffic/neo.addirect.campaign2.png">
+    <img loading="lazy" src="/works/neo-traffic/neo.addirect.campaign2.png" alt="Ad-Direct creative ready for broadcast">
     <figcaption>A creative inside a campaign ready to be played on the network.</figcaption>
   </figure>
 </div>
@@ -57,11 +57,11 @@ Ad-Direct is a dynamic and static advertisement content management and schedulin
 
 <div class="images-row">
   <figure>
-    <img src="/works/neo-traffic/neo.addirect.supports.png">
+    <img loading="lazy" src="/works/neo-traffic/neo.addirect.supports.png" alt="Ad-Direct display format support">
     <figcaption>Ad-Direct supports all kinds of display formats. The formats can be edited and personalized based on needs.</figcaption>
   </figure>
   <figure>
-    <img src="/works/neo-traffic/neo.addirect.params.png">
+    <img loading="lazy" src="/works/neo-traffic/neo.addirect.params.png" alt="Ad-Direct configuration options">
     <figcaption>Ad-Direct offers lots of configurations and personalization options for Neo-Traffic teams.</figcaption>
   </figure>
 </div>
@@ -77,11 +77,11 @@ In addition to advertising content, Neo-Traffic uses its network to offer inform
 
 <div class="images-row">
   <figure>
-    <img src="/works/neo-traffic/neo.dynamics.weather-url.png">
+    <img loading="lazy" src="/works/neo-traffic/neo.dynamics.weather-url.png" alt="Dynamics dashboard URL generator">
     <figcaption>The Dynamics dashboard allow Neo-Traffic teams to generate broadcast URLs easily.</figcaption>
   </figure>
   <figure>
-    <img src="/works/neo-traffic/neo.dynamics.news-backgrounds.png">
+    <img loading="lazy" src="/works/neo-traffic/neo.dynamics.news-backgrounds.png" alt="Dynamics background customization">
     <figcaption>The Dynamics backgrounds can be changed in just a few clicks.</figcaption>
   </figure>
 </div>
@@ -89,14 +89,14 @@ In addition to advertising content, Neo-Traffic uses its network to offer inform
 Both the dashboard and the Dynamics works using the React.JS framework and are based on a common API built using Laravel. The API is in charge of gathering information from all the other APIs providing information. A continuous integration pipeline based on Git hooks allows for crazy-fast updates with no downtime.
 
 <figure>
-  <img class="full-width-image" src="/works/neo-traffic/neo.weather.fcl.png">
+  <img class="full-width-image" loading="lazy" src="/works/neo-traffic/neo.weather.fcl.png" alt="Weather dynamic on food court screens">
   <figcaption>The Weather Dynamic as it displays on food courts screens.</figcaption>
 </figure>
 
 The Weather Dynamic can display the current local weather, a three or five days local forecast, and the national weather, both in French or in English. The dashboard allows for managing the backgrounds, and even set specific backgrounds for specific cities or provinces.
 
 <figure>
-  <img class="full-width-image" src="/works/neo-traffic/neo.news.shd.png">
+  <img class="full-width-image" loading="lazy" src="/works/neo-traffic/neo.news.shd.png" alt="News dynamic on single screen">
   <figcaption>The News Dynamic as it appears when played on a single screen.</figcaption>
 </figure>
 

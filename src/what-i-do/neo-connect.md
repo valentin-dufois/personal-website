@@ -18,7 +18,7 @@ Connect is built as a modular platform. Each module serves a specific purpose bu
 The broadcast module was the first piece built. It provides a unified scheduling and monitoring interface for ad campaigns, regardless of the underlying broadcast system.
 
 <figure>
-  <img class="full-width-image" src="/works/connect/connect.broadcast.png">
+  <img class="full-width-image" loading="lazy" src="/works/connect/connect.broadcast.png" alt="Connect campaign schedules">
   <figcaption>View of a campaign's schedules</figcaption>
 </figure>
 
@@ -27,7 +27,7 @@ I designed an **adapter system** that describes campaigns in a neutral format, t
 Campaign monitoring is centralized, making it fast to track performance across all platforms at once.
 
 <figure>
-  <img class="full-width-image" src="/works/connect/connect.broadcast-2.png">
+  <img class="full-width-image" loading="lazy" src="/works/connect/connect.broadcast-2.png" alt="Connect campaign performance view">
   <figcaption>View of a campaign's performances</figcaption>
 </figure>
 
@@ -38,14 +38,14 @@ Neo's inventory follows a `property > products` structure I designed to match ho
 Over time, the data grew significantly: traffic numbers, pricing, tenant directories, impression calculations, demographic data, photos, and more.
 
 <figure>
-  <img class="full-width-image" src="/works/connect/connect.inventory.png">
+  <img class="full-width-image" loading="lazy" src="/works/connect/connect.inventory.png" alt="Connect product inventory details">
   <figcaption>All the information about a product</figcaption>
 </figure>
 
 The inventory also needs to stay synchronized across multiple programmatic advertising platforms. I built a **sync engine** that propagates updates to Odoo, Hivestack, BroadSign Reach, Atedra, and Vistar automatically, supporting both push and pull directions.
 
 <figure>
-  <img class="full-width-image" src="/works/connect/connect.inventory-2.png">
+  <img class="full-width-image" loading="lazy" src="/works/connect/connect.inventory-2.png" alt="Connect extended product information">
   <figcaption>Even more information about a product</figcaption>
 </figure>
 
@@ -54,7 +54,7 @@ The inventory also needs to stay synchronized across multiple programmatic adver
 The Planner is Neo's sales tool. It lets salespeople build detailed, large-scale ad campaigns quickly.
 
 <figure>
-  <img class="full-width-image" src="/works/connect/connect.planner-1.png">
+  <img class="full-width-image" loading="lazy" src="/works/connect/connect.planner-1.png" alt="Connect planner map view">
   <figcaption>The planner's map, with the city of Montreal boundary and Tim Hortons shown in red.</figcaption>
 </figure>
 
@@ -70,11 +70,11 @@ Filters can be grouped with configurable logic (AND/OR), and each can be inverte
 
 <div class="images-row">
   <figure>
-    <img src="/works/connect/connect.planner-2.png">
+    <img loading="lazy" src="/works/connect/connect.planner-2.png" alt="Connect planner list view">
     <figcaption>The list view showing calculated details for all products</figcaption>
   </figure>
   <figure>
-    <img src="/works/connect/connect.planner-3.png">
+    <img loading="lazy" src="/works/connect/connect.planner-3.png" alt="Connect planner filter results">
     <figcaption>Filter results explaining why a product is included</figcaption>
   </figure>
 </div>
@@ -86,7 +86,7 @@ The Planner became a tool used not just by sales, but by many different teams at
 Contract monitoring tracks campaign performance across all broadcast systems in a single view.
 
 <figure>
-  <img class="full-width-image" src="/works/connect/connect.contracts.png">
+  <img class="full-width-image" loading="lazy" src="/works/connect/connect.contracts.png" alt="Connect contract monitoring">
   <figcaption>A contract homepage</figcaption>
 </figure>
 

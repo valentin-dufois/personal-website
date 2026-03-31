@@ -22,11 +22,11 @@ Le build WASM alimente un **éditeur de code dans le navigateur** avec retour de
 
 <div class="images-row">
   <figure>
-    <img src="/works/autotrader/axl_editor.png">
+    <img loading="lazy" src="/works/autotrader/axl_editor.png" alt="AXL code editor with syntax highlighting">
     <figcaption>L'éditeur AXL avec coloration syntaxique, navigateur d'algorithmes, et référence du langage</figcaption>
   </figure>
   <figure>
-    <img src="/works/autotrader/axl_debug.png">
+    <img loading="lazy" src="/works/autotrader/axl_debug.png" alt="AXL algorithm debug trace">
     <figcaption>Trace de débogage barre par barre d'un algorithme AXL</figcaption>
   </figure>
 </div>
@@ -49,7 +49,7 @@ Le moteur de backtesting rejoue les données historiques barre par barre avec un
 Pour l'optimisation des paramètres, la plateforme utilise l'**optimisation bayésienne via Optuna**, permettant de tuner les algorithmes sur de grands espaces de paramètres. Elle supporte aussi la **validation walk-forward** — des fenêtres séquentielles d'entraînement/test pour se prémunir contre le surapprentissage — et les **scans d'algorithmes** pour une optimisation multi-symboles et multi-timeframes.
 
 <figure>
-  <img class="full-width-image" src="/works/autotrader/fitting_run_details.png">
+  <img class="full-width-image" loading="lazy" src="/works/autotrader/fitting_run_details.png" alt="Bayesian optimization fitting run">
   <figcaption>Un run d'optimisation bayésienne sur plusieurs rounds</figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ Pour l'optimisation des paramètres, la plateforme utilise l'**optimisation bay�
 Le frontend React offre un suivi en temps réel des positions, ordres, et P&L via des connexions WebSocket. Il expose aussi la bibliothèque d'algorithmes avec l'éditeur AXL intégré, l'historique de backtests, les résultats de scans, et les runs d'optimisation.
 
 <figure>
-  <img class="full-width-image" src="/works/autotrader/session_details.png">
+  <img class="full-width-image" loading="lazy" src="/works/autotrader/session_details.png" alt="Backtest session with equity chart">
   <figcaption>Session de backtest avec courbe d'équité, ordres, et métriques de performance</figcaption>
 </figure>
 

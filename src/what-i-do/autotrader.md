@@ -22,11 +22,11 @@ The WASM build powers an **in-browser code editor** with real-time compilation f
 
 <div class="images-row">
   <figure>
-    <img src="/works/autotrader/axl_editor.png">
+    <img loading="lazy" src="/works/autotrader/axl_editor.png" alt="AXL code editor with syntax highlighting">
     <figcaption>The AXL editor with syntax highlighting, algorithm browser, and language reference</figcaption>
   </figure>
   <figure>
-    <img src="/works/autotrader/axl_debug.png">
+    <img loading="lazy" src="/works/autotrader/axl_debug.png" alt="AXL algorithm debug trace">
     <figcaption>Bar-by-bar debug trace of an AXL algorithm execution</figcaption>
   </figure>
 </div>
@@ -49,7 +49,7 @@ The backtesting engine replays historical data bar-by-bar with realistic fill si
 For parameter optimization, the platform uses **Bayesian optimization via Optuna**, allowing algorithms to be tuned across large parameter spaces. It also supports **walk-forward validation** — sequential train/test windows to guard against overfitting — and **algorithm scans** for multi-symbol, multi-timeframe optimization.
 
 <figure>
-  <img class="full-width-image" src="/works/autotrader/fitting_run_details.png">
+  <img class="full-width-image" loading="lazy" src="/works/autotrader/fitting_run_details.png" alt="Bayesian optimization fitting run">
   <figcaption>A fitting run with Bayesian optimization across multiple rounds</figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ For parameter optimization, the platform uses **Bayesian optimization via Optuna
 The React frontend provides real-time monitoring of positions, orders, and P&L through WebSocket connections. It also exposes the algorithm library with the integrated AXL editor, backtest history, scan results, and optimization runs.
 
 <figure>
-  <img class="full-width-image" src="/works/autotrader/session_details.png">
+  <img class="full-width-image" loading="lazy" src="/works/autotrader/session_details.png" alt="Backtest session with equity chart">
   <figcaption>Backtest session with equity chart, orders, and performance metrics</figcaption>
 </figure>
 
